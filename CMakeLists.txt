@@ -10,5 +10,8 @@ target_include_directories(odelib INTERFACE include)
 add_executable(decay_euler examples/decay_euler.cpp)
 target_link_libraries(decay_euler PRIVATE odelib)
 
+add_executable(decay_rk4 examples/decay_rk4.cpp)
+target_link_libraries(decay_rk4 PRIVATE odelib)
+
 enable_testing()
 add_subdirectory(tests)
