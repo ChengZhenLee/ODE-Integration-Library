@@ -1,49 +1,25 @@
 # ninja log v7
-3	1152	8098925250128468	build.ninja	ccd3d6f3f1b1daa9
-3	1152	8098925249903288	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
-3	1152	8098925250022503	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
-3	1152	8098925249924897	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-3	1152	8098925250049788	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-548	2928	8098897538232925	tests/CMakeFiles/test_euler.dir/test_euler.cpp.obj	bb552e259ad50b70
-2928	4835	8098897562075524	tests/test_euler.exe	857c6c01f2b394d9
-433	2900	8098897537110420	CMakeFiles/decay_euler.dir/examples/decay_euler.cpp.obj	d36b571e15922c63
-2902	4828	8098897561823852	decay_euler.exe	8711c6902c510352
-6	1144	8098924501360624	CMakeFiles/decay_rk4.dir/examples/decay_rk4.cpp.obj	41ac2e4f1c57acdc
-1148	2310	8098924512762390	decay_rk4.exe	887b8292019dc1b5
-3	253	8098925250128468	build.ninja	ccd3d6f3f1b1daa9
-3	253	8098925250128468	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
-3	253	8098925250128468	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
-3	253	8098925250128468	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-3	253	8098925250128468	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-57	1323	8098925251251748	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	993b2487805b1524
-1325	1845	8098925263903457	tests/test_rk4.exe	706ae9fe5cbe971d
-200	2650	8098929952926509	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	993b2487805b1524
-96	2671	8098929951895577	CMakeFiles/decay_rk4.dir/examples/decay_rk4.cpp.obj	41ac2e4f1c57acdc
-2672	3551	8098929977743316	decay_rk4.exe	887b8292019dc1b5
-2652	3555	8098929977526184	tests/test_rk4.exe	706ae9fe5cbe971d
-9	672	8098935125212363	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	993b2487805b1524
-675	1118	8098935131814228	tests/test_rk4.exe	706ae9fe5cbe971d
-9	1095	8098935910860617	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	993b2487805b1524
-1097	1884	8098935921680023	tests/test_rk4.exe	706ae9fe5cbe971d
-9	755	8098938167221189	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	993b2487805b1524
-758	1337	8098938174741347	tests/test_rk4.exe	706ae9fe5cbe971d
-9	2270	8098940016442563	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	993b2487805b1524
-2271	2919	8098940039176889	tests/test_rk4.exe	706ae9fe5cbe971d
-8	739	8098940535145683	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	993b2487805b1524
-741	1196	8098940542542671	tests/test_rk4.exe	706ae9fe5cbe971d
-63	1191	8098940848446143	tests/CMakeFiles/test_euler.dir/test_euler.cpp.obj	bb552e259ad50b70
-53	1317	8098940848202010	CMakeFiles/decay_rk4.dir/examples/decay_rk4.cpp.obj	41ac2e4f1c57acdc
-41	1469	8098940848202010	CMakeFiles/decay_euler.dir/examples/decay_euler.cpp.obj	d36b571e15922c63
-1193	2156	8098940859753267	tests/test_euler.exe	857c6c01f2b394d9
-1318	2301	8098940860974518	decay_rk4.exe	887b8292019dc1b5
-1469	2423	8098940862472602	decay_euler.exe	8711c6902c510352
-21	828	8098943401620208	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	993b2487805b1524
-830	1223	8098943409674797	tests/test_rk4.exe	706ae9fe5cbe971d
-30	3497	8098943987833597	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	993b2487805b1524
-3500	4371	8098944022526830	tests/test_rk4.exe	706ae9fe5cbe971d
-11	882	8098945943453593	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	993b2487805b1524
-884	1318	8098945952329399	tests/test_rk4.exe	706ae9fe5cbe971d
-38	2723	8098946798290228	tests/CMakeFiles/test_euler.dir/test_euler.cpp.obj	bb552e259ad50b70
-2726	3601	8098946825141408	tests/test_euler.exe	857c6c01f2b394d9
+34	1086	8099709037761731	build.ninja	ccd3d6f3f1b1daa9
+34	1086	8099709037319789	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
+34	1086	8099709037549512	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
+34	1086	8099709037361640	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+34	1086	8099709037593334	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
 32	833	8098947047291824	tests/CMakeFiles/test_euler.dir/test_euler.cpp.obj	bb552e259ad50b70
 835	1241	8098947055285110	tests/test_euler.exe	857c6c01f2b394d9
+41	1469	8098940848202010	CMakeFiles/decay_euler.dir/examples/decay_euler.cpp.obj	d36b571e15922c63
+1469	2423	8098940862472602	decay_euler.exe	8711c6902c510352
+11	963	8099678815512766	CMakeFiles/decay_rk4.dir/examples/decay_rk4.cpp.obj	41ac2e4f1c57acdc
+964	1412	8099678825079297	decay_rk4.exe	887b8292019dc1b5
+11	882	8098945943453593	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	993b2487805b1524
+884	1318	8098945952329399	tests/test_rk4.exe	706ae9fe5cbe971d
+215	13223	8099674309113131	CMakeFiles/lambda_rk4.dir/examples/lambda_rk4.cpp.obj	ca219bb6c1790de7
+13229	14938	8099674439223011	lambda_rk4.exe	5096e5d93df4b0e2
+23	871	8099678815639949	CMakeFiles/scaled_decay_rk4.dir/examples/scaled_decay_rk4.cpp.obj	b93e5f53f2beaac
+872	1359	8099678824126566	scaled_decay_rk4.exe	9128a40820aa01c
+26	1193	8099709037761731	build.ninja	ccd3d6f3f1b1daa9
+26	1193	8099709037761731	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
+26	1193	8099709037761731	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
+26	1193	8099709037761731	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+26	1193	8099709037761731	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+49	11786	8099714095082029	CMakeFiles/decay_rk4_vector.dir/examples/decay_rk4_vector.cpp.obj	137048c07ebb4ae5
+11820	14588	8099714212871684	decay_rk4_vector.exe	50f09883d13bdd8b

@@ -105,6 +105,76 @@ build decay_rk4.exe: CXX_EXECUTABLE_LINKER__decay_rk4_ CMakeFiles/decay_rk4.dir/
   TARGET_PDB = decay_rk4.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\decay_rk4.dir
 
+# =============================================================================
+# Object build statements for EXECUTABLE target scaled_decay_rk4
+
+
+#############################################
+# Order-only phony target for scaled_decay_rk4
+
+build cmake_object_order_depends_target_scaled_decay_rk4: phony || .
+
+build CMakeFiles/scaled_decay_rk4.dir/examples/scaled_decay_rk4.cpp.obj: CXX_COMPILER__scaled_decay_rk4_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/scaled_decay_rk4.cpp || cmake_object_order_depends_target_scaled_decay_rk4
+  DEP_FILE = CMakeFiles\scaled_decay_rk4.dir\examples\scaled_decay_rk4.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = CMakeFiles\scaled_decay_rk4.dir
+  OBJECT_FILE_DIR = CMakeFiles\scaled_decay_rk4.dir\examples
+  TARGET_SUPPORT_DIR = CMakeFiles\scaled_decay_rk4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target scaled_decay_rk4
+
+
+#############################################
+# Link the executable scaled_decay_rk4.exe
+
+build scaled_decay_rk4.exe: CXX_EXECUTABLE_LINKER__scaled_decay_rk4_ CMakeFiles/scaled_decay_rk4.dir/examples/scaled_decay_rk4.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\scaled_decay_rk4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = scaled_decay_rk4.exe
+  TARGET_IMPLIB = libscaled_decay_rk4.dll.a
+  TARGET_PDB = scaled_decay_rk4.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\scaled_decay_rk4.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target decay_rk4_vector
+
+
+#############################################
+# Order-only phony target for decay_rk4_vector
+
+build cmake_object_order_depends_target_decay_rk4_vector: phony || .
+
+build CMakeFiles/decay_rk4_vector.dir/examples/decay_rk4_vector.cpp.obj: CXX_COMPILER__decay_rk4_vector_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/decay_rk4_vector.cpp || cmake_object_order_depends_target_decay_rk4_vector
+  DEP_FILE = CMakeFiles\decay_rk4_vector.dir\examples\decay_rk4_vector.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = CMakeFiles\decay_rk4_vector.dir
+  OBJECT_FILE_DIR = CMakeFiles\decay_rk4_vector.dir\examples
+  TARGET_SUPPORT_DIR = CMakeFiles\decay_rk4_vector.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target decay_rk4_vector
+
+
+#############################################
+# Link the executable decay_rk4_vector.exe
+
+build decay_rk4_vector.exe: CXX_EXECUTABLE_LINKER__decay_rk4_vector_ CMakeFiles/decay_rk4_vector.dir/examples/decay_rk4_vector.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\decay_rk4_vector.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = decay_rk4_vector.exe
+  TARGET_IMPLIB = libdecay_rk4_vector.dll.a
+  TARGET_PDB = decay_rk4_vector.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\decay_rk4_vector.dir
+
 
 #############################################
 # Utility command for test
@@ -259,6 +329,10 @@ build decay_euler: phony decay_euler.exe
 
 build decay_rk4: phony decay_rk4.exe
 
+build decay_rk4_vector: phony decay_rk4_vector.exe
+
+build scaled_decay_rk4: phony scaled_decay_rk4.exe
+
 build test_euler: phony tests/test_euler.exe
 
 build test_euler.exe: phony tests/test_euler.exe
@@ -275,7 +349,7 @@ build test_rk4.exe: phony tests/test_rk4.exe
 #############################################
 # Folder: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build
 
-build all: phony decay_euler.exe decay_rk4.exe tests/all
+build all: phony decay_euler.exe decay_rk4.exe scaled_decay_rk4.exe decay_rk4_vector.exe tests/all
 
 # =============================================================================
 

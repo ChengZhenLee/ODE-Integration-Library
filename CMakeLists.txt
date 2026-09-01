@@ -13,5 +13,11 @@ target_link_libraries(decay_euler PRIVATE odelib)
 add_executable(decay_rk4 examples/decay_rk4.cpp)
 target_link_libraries(decay_rk4 PRIVATE odelib)
 
+add_executable(scaled_decay_rk4 examples/scaled_decay_rk4.cpp)
+target_link_libraries(scaled_decay_rk4 PRIVATE odelib)
+
+add_executable(decay_rk4_vector examples/decay_rk4_vector.cpp)
+target_link_libraries(decay_rk4_vector PRIVATE odelib)
+
 enable_testing()
 add_subdirectory(tests)

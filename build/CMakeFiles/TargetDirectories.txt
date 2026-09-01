@@ -1,5 +1,7 @@
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/decay_euler.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/decay_rk4.dir
+C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/scaled_decay_rk4.dir
+C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/decay_rk4_vector.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/test.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/edit_cache.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/rebuild_cache.dir

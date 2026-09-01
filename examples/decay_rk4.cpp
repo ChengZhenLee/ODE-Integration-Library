@@ -19,7 +19,7 @@ int main() {
     auto ys = odelib::integrate(stepper, decay, y0, t0, t1, h);
 
     std::cout << std::fixed << std::setprecision(6);
-    std::cout << "t\tEuler\t\tExact\t\tError\n";
+    std::cout << "t\tRK4\t\tExact\t\tError\n";
 
     for (std::size_t i = 0; i < ys.size(); i += 100) {
         double t = t0 + i * h;
