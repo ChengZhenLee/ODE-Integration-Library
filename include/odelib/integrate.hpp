@@ -2,19 +2,56 @@
 #include <cmath>
 #include <vector>
 
+
 namespace odelib {
 
-template <typename Stepper, typename System, typename State, typename Time>
-std::vector<State> integrate(const Stepper& stepper, System&& f, State y0, Time t0, Time t1, Time h) {
-    std::vector<State> res = {y0};
+template <typename State, typename Time>
+struct AdaptiveIntegrationResult {
+    std::vector<State> states;
+    std::vector<Time> times;
+    std::vector<Time> hs;
+};
 
-    long n = static_cast<long>(std::round((t1 - t0) / h));
-    for (long i = 0; i < n; ++i) {
-        Time t = t0 + static_cast<Time>(i) * h;
-        res.push_back(stepper.step(f, res.back(), t, h));
+template <typename Stepper, typename System, typename State, typename Time>
+auto integrate(const Stepper& stepper, System&& f, State y0, Time t0, Time t1, Time h) {
+    using StepReturnType = decltype(stepper.step(f, y0, t0, h));
+
+    if constexpr(std::is_same_v<StepReturnType, State>) {
+        std::vector<State> res = {y0};
+
+        Time t = t0;
+
+        while (t < t1) {
+            res.push_back(stepper.step(f, res.back(), t, h));
+            t += h;
+        }
+
+        return res;
+
+    } else {
+        std::vector<State> res = {y0};
+        std::vector<Time> times = {t0};
+        std::vector<Time> hs = {h};
+
+        Time t = t0;
+        Time hAdaptive = h;
+
+        while (t < t1) {
+            Time hClamped = std::min(hAdaptive, t1 - t);
+            auto stepResult = stepper.step(f, res.back(), t, hClamped);
+
+            if (stepResult.accepted) {
+                t += stepResult.hUsed;
+                res.push_back(stepResult.yNext);
+                times.push_back(t);
+                hs.push_back(stepResult.hUsed);
+            }
+            hAdaptive = stepResult.hSuggested;
+        }
+
+        return AdaptiveIntegrationResult<State, Time>{res, times, hs};
     }
 
-    return res;
 };
 
 }

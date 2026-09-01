@@ -46,7 +46,7 @@ build cmake_object_order_depends_target_decay_euler: phony || .
 
 build CMakeFiles/decay_euler.dir/examples/decay_euler.cpp.obj: CXX_COMPILER__decay_euler_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/decay_euler.cpp || cmake_object_order_depends_target_decay_euler
   DEP_FILE = CMakeFiles\decay_euler.dir\examples\decay_euler.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=gnu++20
   INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
   OBJECT_DIR = CMakeFiles\decay_euler.dir
   OBJECT_FILE_DIR = CMakeFiles\decay_euler.dir\examples
@@ -81,7 +81,7 @@ build cmake_object_order_depends_target_decay_rk4: phony || .
 
 build CMakeFiles/decay_rk4.dir/examples/decay_rk4.cpp.obj: CXX_COMPILER__decay_rk4_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/decay_rk4.cpp || cmake_object_order_depends_target_decay_rk4
   DEP_FILE = CMakeFiles\decay_rk4.dir\examples\decay_rk4.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=gnu++20
   INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
   OBJECT_DIR = CMakeFiles\decay_rk4.dir
   OBJECT_FILE_DIR = CMakeFiles\decay_rk4.dir\examples
@@ -116,7 +116,7 @@ build cmake_object_order_depends_target_scaled_decay_rk4: phony || .
 
 build CMakeFiles/scaled_decay_rk4.dir/examples/scaled_decay_rk4.cpp.obj: CXX_COMPILER__scaled_decay_rk4_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/scaled_decay_rk4.cpp || cmake_object_order_depends_target_scaled_decay_rk4
   DEP_FILE = CMakeFiles\scaled_decay_rk4.dir\examples\scaled_decay_rk4.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=gnu++20
   INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
   OBJECT_DIR = CMakeFiles\scaled_decay_rk4.dir
   OBJECT_FILE_DIR = CMakeFiles\scaled_decay_rk4.dir\examples
@@ -141,39 +141,109 @@ build scaled_decay_rk4.exe: CXX_EXECUTABLE_LINKER__scaled_decay_rk4_ CMakeFiles/
   TARGET_SUPPORT_DIR = CMakeFiles\scaled_decay_rk4.dir
 
 # =============================================================================
-# Object build statements for EXECUTABLE target decay_rk4_vector
+# Object build statements for EXECUTABLE target harmonic_oscillator_rk4
 
 
 #############################################
-# Order-only phony target for decay_rk4_vector
+# Order-only phony target for harmonic_oscillator_rk4
 
-build cmake_object_order_depends_target_decay_rk4_vector: phony || .
+build cmake_object_order_depends_target_harmonic_oscillator_rk4: phony || .
 
-build CMakeFiles/decay_rk4_vector.dir/examples/decay_rk4_vector.cpp.obj: CXX_COMPILER__decay_rk4_vector_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/decay_rk4_vector.cpp || cmake_object_order_depends_target_decay_rk4_vector
-  DEP_FILE = CMakeFiles\decay_rk4_vector.dir\examples\decay_rk4_vector.cpp.obj.d
-  FLAGS = -std=gnu++17
+build CMakeFiles/harmonic_oscillator_rk4.dir/examples/harmonic_oscillator_rk4.cpp.obj: CXX_COMPILER__harmonic_oscillator_rk4_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/harmonic_oscillator_rk4.cpp || cmake_object_order_depends_target_harmonic_oscillator_rk4
+  DEP_FILE = CMakeFiles\harmonic_oscillator_rk4.dir\examples\harmonic_oscillator_rk4.cpp.obj.d
+  FLAGS = -std=gnu++20
   INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
-  OBJECT_DIR = CMakeFiles\decay_rk4_vector.dir
-  OBJECT_FILE_DIR = CMakeFiles\decay_rk4_vector.dir\examples
-  TARGET_SUPPORT_DIR = CMakeFiles\decay_rk4_vector.dir
+  OBJECT_DIR = CMakeFiles\harmonic_oscillator_rk4.dir
+  OBJECT_FILE_DIR = CMakeFiles\harmonic_oscillator_rk4.dir\examples
+  TARGET_SUPPORT_DIR = CMakeFiles\harmonic_oscillator_rk4.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target decay_rk4_vector
+# Link build statements for EXECUTABLE target harmonic_oscillator_rk4
 
 
 #############################################
-# Link the executable decay_rk4_vector.exe
+# Link the executable harmonic_oscillator_rk4.exe
 
-build decay_rk4_vector.exe: CXX_EXECUTABLE_LINKER__decay_rk4_vector_ CMakeFiles/decay_rk4_vector.dir/examples/decay_rk4_vector.cpp.obj
+build harmonic_oscillator_rk4.exe: CXX_EXECUTABLE_LINKER__harmonic_oscillator_rk4_ CMakeFiles/harmonic_oscillator_rk4.dir/examples/harmonic_oscillator_rk4.cpp.obj
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\decay_rk4_vector.dir
+  OBJECT_DIR = CMakeFiles\harmonic_oscillator_rk4.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = decay_rk4_vector.exe
-  TARGET_IMPLIB = libdecay_rk4_vector.dll.a
-  TARGET_PDB = decay_rk4_vector.exe.dbg
-  TARGET_SUPPORT_DIR = CMakeFiles\decay_rk4_vector.dir
+  TARGET_FILE = harmonic_oscillator_rk4.exe
+  TARGET_IMPLIB = libharmonic_oscillator_rk4.dll.a
+  TARGET_PDB = harmonic_oscillator_rk4.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\harmonic_oscillator_rk4.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target harmonic_oscillator_adaptive_rk4
+
+
+#############################################
+# Order-only phony target for harmonic_oscillator_adaptive_rk4
+
+build cmake_object_order_depends_target_harmonic_oscillator_adaptive_rk4: phony || .
+
+build CMakeFiles/harmonic_oscillator_adaptive_rk4.dir/examples/harmonic_oscillator_adaptive_rk4.cpp.obj: CXX_COMPILER__harmonic_oscillator_adaptive_rk4_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/harmonic_oscillator_adaptive_rk4.cpp || cmake_object_order_depends_target_harmonic_oscillator_adaptive_rk4
+  DEP_FILE = CMakeFiles\harmonic_oscillator_adaptive_rk4.dir\examples\harmonic_oscillator_adaptive_rk4.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = CMakeFiles\harmonic_oscillator_adaptive_rk4.dir
+  OBJECT_FILE_DIR = CMakeFiles\harmonic_oscillator_adaptive_rk4.dir\examples
+  TARGET_SUPPORT_DIR = CMakeFiles\harmonic_oscillator_adaptive_rk4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target harmonic_oscillator_adaptive_rk4
+
+
+#############################################
+# Link the executable harmonic_oscillator_adaptive_rk4.exe
+
+build harmonic_oscillator_adaptive_rk4.exe: CXX_EXECUTABLE_LINKER__harmonic_oscillator_adaptive_rk4_ CMakeFiles/harmonic_oscillator_adaptive_rk4.dir/examples/harmonic_oscillator_adaptive_rk4.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\harmonic_oscillator_adaptive_rk4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = harmonic_oscillator_adaptive_rk4.exe
+  TARGET_IMPLIB = libharmonic_oscillator_adaptive_rk4.dll.a
+  TARGET_PDB = harmonic_oscillator_adaptive_rk4.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\harmonic_oscillator_adaptive_rk4.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target scaled_decay_adaptive_rk4
+
+
+#############################################
+# Order-only phony target for scaled_decay_adaptive_rk4
+
+build cmake_object_order_depends_target_scaled_decay_adaptive_rk4: phony || .
+
+build CMakeFiles/scaled_decay_adaptive_rk4.dir/examples/scaled_decay_adaptive_rk4.cpp.obj: CXX_COMPILER__scaled_decay_adaptive_rk4_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/scaled_decay_adaptive_rk4.cpp || cmake_object_order_depends_target_scaled_decay_adaptive_rk4
+  DEP_FILE = CMakeFiles\scaled_decay_adaptive_rk4.dir\examples\scaled_decay_adaptive_rk4.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir
+  OBJECT_FILE_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir\examples
+  TARGET_SUPPORT_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target scaled_decay_adaptive_rk4
+
+
+#############################################
+# Link the executable scaled_decay_adaptive_rk4.exe
+
+build scaled_decay_adaptive_rk4.exe: CXX_EXECUTABLE_LINKER__scaled_decay_adaptive_rk4_ CMakeFiles/scaled_decay_adaptive_rk4.dir/examples/scaled_decay_adaptive_rk4.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = scaled_decay_adaptive_rk4.exe
+  TARGET_IMPLIB = libscaled_decay_adaptive_rk4.dll.a
+  TARGET_PDB = scaled_decay_adaptive_rk4.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir
 
 
 #############################################
@@ -227,7 +297,7 @@ build cmake_object_order_depends_target_test_euler: phony || .
 
 build tests/CMakeFiles/test_euler.dir/test_euler.cpp.obj: CXX_COMPILER__test_euler_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/test_euler.cpp || cmake_object_order_depends_target_test_euler
   DEP_FILE = tests\CMakeFiles\test_euler.dir\test_euler.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=gnu++20
   INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
   OBJECT_DIR = tests\CMakeFiles\test_euler.dir
   OBJECT_FILE_DIR = tests\CMakeFiles\test_euler.dir
@@ -262,7 +332,7 @@ build cmake_object_order_depends_target_test_rk4: phony || .
 
 build tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj: CXX_COMPILER__test_rk4_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/test_rk4.cpp || cmake_object_order_depends_target_test_rk4
   DEP_FILE = tests\CMakeFiles\test_rk4.dir\test_rk4.cpp.obj.d
-  FLAGS = -std=gnu++17
+  FLAGS = -std=gnu++20
   INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
   OBJECT_DIR = tests\CMakeFiles\test_rk4.dir
   OBJECT_FILE_DIR = tests\CMakeFiles\test_rk4.dir
@@ -285,6 +355,146 @@ build tests/test_rk4.exe: CXX_EXECUTABLE_LINKER__test_rk4_ tests/CMakeFiles/test
   TARGET_IMPLIB = tests\libtest_rk4.dll.a
   TARGET_PDB = test_rk4.exe.dbg
   TARGET_SUPPORT_DIR = tests\CMakeFiles\test_rk4.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_scaled_decay_rk4
+
+
+#############################################
+# Order-only phony target for test_scaled_decay_rk4
+
+build cmake_object_order_depends_target_test_scaled_decay_rk4: phony || .
+
+build tests/CMakeFiles/test_scaled_decay_rk4.dir/test_scaled_decay_rk4.cpp.obj: CXX_COMPILER__test_scaled_decay_rk4_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/test_scaled_decay_rk4.cpp || cmake_object_order_depends_target_test_scaled_decay_rk4
+  DEP_FILE = tests\CMakeFiles\test_scaled_decay_rk4.dir\test_scaled_decay_rk4.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = tests\CMakeFiles\test_scaled_decay_rk4.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\test_scaled_decay_rk4.dir
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_scaled_decay_rk4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_scaled_decay_rk4
+
+
+#############################################
+# Link the executable tests\test_scaled_decay_rk4.exe
+
+build tests/test_scaled_decay_rk4.exe: CXX_EXECUTABLE_LINKER__test_scaled_decay_rk4_ tests/CMakeFiles/test_scaled_decay_rk4.dir/test_scaled_decay_rk4.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = tests\CMakeFiles\test_scaled_decay_rk4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = tests\test_scaled_decay_rk4.exe
+  TARGET_IMPLIB = tests\libtest_scaled_decay_rk4.dll.a
+  TARGET_PDB = test_scaled_decay_rk4.exe.dbg
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_scaled_decay_rk4.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_harmonic_oscillator_rk4
+
+
+#############################################
+# Order-only phony target for test_harmonic_oscillator_rk4
+
+build cmake_object_order_depends_target_test_harmonic_oscillator_rk4: phony || .
+
+build tests/CMakeFiles/test_harmonic_oscillator_rk4.dir/test_harmonic_oscillator_rk4.cpp.obj: CXX_COMPILER__test_harmonic_oscillator_rk4_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/test_harmonic_oscillator_rk4.cpp || cmake_object_order_depends_target_test_harmonic_oscillator_rk4
+  DEP_FILE = tests\CMakeFiles\test_harmonic_oscillator_rk4.dir\test_harmonic_oscillator_rk4.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = tests\CMakeFiles\test_harmonic_oscillator_rk4.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\test_harmonic_oscillator_rk4.dir
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_harmonic_oscillator_rk4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_harmonic_oscillator_rk4
+
+
+#############################################
+# Link the executable tests\test_harmonic_oscillator_rk4.exe
+
+build tests/test_harmonic_oscillator_rk4.exe: CXX_EXECUTABLE_LINKER__test_harmonic_oscillator_rk4_ tests/CMakeFiles/test_harmonic_oscillator_rk4.dir/test_harmonic_oscillator_rk4.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = tests\CMakeFiles\test_harmonic_oscillator_rk4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = tests\test_harmonic_oscillator_rk4.exe
+  TARGET_IMPLIB = tests\libtest_harmonic_oscillator_rk4.dll.a
+  TARGET_PDB = test_harmonic_oscillator_rk4.exe.dbg
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_harmonic_oscillator_rk4.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_scaled_decay_adaptive_rk4
+
+
+#############################################
+# Order-only phony target for test_scaled_decay_adaptive_rk4
+
+build cmake_object_order_depends_target_test_scaled_decay_adaptive_rk4: phony || .
+
+build tests/CMakeFiles/test_scaled_decay_adaptive_rk4.dir/test_scaled_decay_adaptive_rk4.cpp.obj: CXX_COMPILER__test_scaled_decay_adaptive_rk4_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/test_scaled_decay_adaptive_rk4.cpp || cmake_object_order_depends_target_test_scaled_decay_adaptive_rk4
+  DEP_FILE = tests\CMakeFiles\test_scaled_decay_adaptive_rk4.dir\test_scaled_decay_adaptive_rk4.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = tests\CMakeFiles\test_scaled_decay_adaptive_rk4.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\test_scaled_decay_adaptive_rk4.dir
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_scaled_decay_adaptive_rk4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_scaled_decay_adaptive_rk4
+
+
+#############################################
+# Link the executable tests\test_scaled_decay_adaptive_rk4.exe
+
+build tests/test_scaled_decay_adaptive_rk4.exe: CXX_EXECUTABLE_LINKER__test_scaled_decay_adaptive_rk4_ tests/CMakeFiles/test_scaled_decay_adaptive_rk4.dir/test_scaled_decay_adaptive_rk4.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = tests\CMakeFiles\test_scaled_decay_adaptive_rk4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = tests\test_scaled_decay_adaptive_rk4.exe
+  TARGET_IMPLIB = tests\libtest_scaled_decay_adaptive_rk4.dll.a
+  TARGET_PDB = test_scaled_decay_adaptive_rk4.exe.dbg
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_scaled_decay_adaptive_rk4.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_harmonic_oscillator_adaptive_rk4
+
+
+#############################################
+# Order-only phony target for test_harmonic_oscillator_adaptive_rk4
+
+build cmake_object_order_depends_target_test_harmonic_oscillator_adaptive_rk4: phony || .
+
+build tests/CMakeFiles/test_harmonic_oscillator_adaptive_rk4.dir/test_harmonic_oscillator_adaptive_rk4.cpp.obj: CXX_COMPILER__test_harmonic_oscillator_adaptive_rk4_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/test_harmonic_oscillator_adaptive_rk4.cpp || cmake_object_order_depends_target_test_harmonic_oscillator_adaptive_rk4
+  DEP_FILE = tests\CMakeFiles\test_harmonic_oscillator_adaptive_rk4.dir\test_harmonic_oscillator_adaptive_rk4.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = tests\CMakeFiles\test_harmonic_oscillator_adaptive_rk4.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\test_harmonic_oscillator_adaptive_rk4.dir
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_harmonic_oscillator_adaptive_rk4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_harmonic_oscillator_adaptive_rk4
+
+
+#############################################
+# Link the executable tests\test_harmonic_oscillator_adaptive_rk4.exe
+
+build tests/test_harmonic_oscillator_adaptive_rk4.exe: CXX_EXECUTABLE_LINKER__test_harmonic_oscillator_adaptive_rk4_ tests/CMakeFiles/test_harmonic_oscillator_adaptive_rk4.dir/test_harmonic_oscillator_adaptive_rk4.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = tests\CMakeFiles\test_harmonic_oscillator_adaptive_rk4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = tests\test_harmonic_oscillator_adaptive_rk4.exe
+  TARGET_IMPLIB = tests\libtest_harmonic_oscillator_adaptive_rk4.dll.a
+  TARGET_PDB = test_harmonic_oscillator_adaptive_rk4.exe.dbg
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_harmonic_oscillator_adaptive_rk4.dir
 
 
 #############################################
@@ -329,7 +539,11 @@ build decay_euler: phony decay_euler.exe
 
 build decay_rk4: phony decay_rk4.exe
 
-build decay_rk4_vector: phony decay_rk4_vector.exe
+build harmonic_oscillator_adaptive_rk4: phony harmonic_oscillator_adaptive_rk4.exe
+
+build harmonic_oscillator_rk4: phony harmonic_oscillator_rk4.exe
+
+build scaled_decay_adaptive_rk4: phony scaled_decay_adaptive_rk4.exe
 
 build scaled_decay_rk4: phony scaled_decay_rk4.exe
 
@@ -337,9 +551,25 @@ build test_euler: phony tests/test_euler.exe
 
 build test_euler.exe: phony tests/test_euler.exe
 
+build test_harmonic_oscillator_adaptive_rk4: phony tests/test_harmonic_oscillator_adaptive_rk4.exe
+
+build test_harmonic_oscillator_adaptive_rk4.exe: phony tests/test_harmonic_oscillator_adaptive_rk4.exe
+
+build test_harmonic_oscillator_rk4: phony tests/test_harmonic_oscillator_rk4.exe
+
+build test_harmonic_oscillator_rk4.exe: phony tests/test_harmonic_oscillator_rk4.exe
+
 build test_rk4: phony tests/test_rk4.exe
 
 build test_rk4.exe: phony tests/test_rk4.exe
+
+build test_scaled_decay_adaptive_rk4: phony tests/test_scaled_decay_adaptive_rk4.exe
+
+build test_scaled_decay_adaptive_rk4.exe: phony tests/test_scaled_decay_adaptive_rk4.exe
+
+build test_scaled_decay_rk4: phony tests/test_scaled_decay_rk4.exe
+
+build test_scaled_decay_rk4.exe: phony tests/test_scaled_decay_rk4.exe
 
 # =============================================================================
 # Folder targets.
@@ -349,14 +579,14 @@ build test_rk4.exe: phony tests/test_rk4.exe
 #############################################
 # Folder: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build
 
-build all: phony decay_euler.exe decay_rk4.exe scaled_decay_rk4.exe decay_rk4_vector.exe tests/all
+build all: phony decay_euler.exe decay_rk4.exe scaled_decay_rk4.exe harmonic_oscillator_rk4.exe harmonic_oscillator_adaptive_rk4.exe scaled_decay_adaptive_rk4.exe tests/all
 
 # =============================================================================
 
 #############################################
 # Folder: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests
 
-build tests/all: phony tests/test_euler.exe tests/test_rk4.exe
+build tests/all: phony tests/test_euler.exe tests/test_rk4.exe tests/test_scaled_decay_rk4.exe tests/test_harmonic_oscillator_rk4.exe tests/test_scaled_decay_adaptive_rk4.exe tests/test_harmonic_oscillator_adaptive_rk4.exe
 
 # =============================================================================
 # Built-in targets

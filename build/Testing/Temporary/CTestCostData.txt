@@ -1,0 +1,8 @@
+test_euler 3 0.229778
+test_rk4 3 0.24676
+test_scaled_decay_rk4 2 0.409514
+test_decay_rk4_vector 1 0.472811
+test_harmonic_oscillator_rk4 1 0.832483
+test_scaled_decay_adaptive_rk4 1 0.411502
+test_harmonic_oscillator_adaptive_rk4 1 0.491458
+---
