@@ -4,6 +4,8 @@ C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/scaled_
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/harmonic_oscillator_rk4.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/harmonic_oscillator_adaptive_rk4.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/scaled_decay_adaptive_rk4.dir
+C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/harmonic_oscillator_rkdp.dir
+C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/harmonic_oscillator_adaptive_rkdp.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/test.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/edit_cache.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CMakeFiles/rebuild_cache.dir
@@ -13,6 +15,8 @@ C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CMakeFiles/t
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CMakeFiles/test_harmonic_oscillator_rk4.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CMakeFiles/test_scaled_decay_adaptive_rk4.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CMakeFiles/test_harmonic_oscillator_adaptive_rk4.dir
+C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CMakeFiles/test_harmonic_oscillator_rkdp.dir
+C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CMakeFiles/test_harmonic_oscillator_adaptive_rkdp.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CMakeFiles/test.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CMakeFiles/edit_cache.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CMakeFiles/rebuild_cache.dir

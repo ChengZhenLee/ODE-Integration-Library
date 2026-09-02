@@ -3,7 +3,7 @@
 #include <iomanip>
 
 
-#include "odelib/steppers/adaptive_rk4.hpp"
+#include "odelib/steppers/rkdp.hpp"
 #include "odelib/integrate.hpp"
 #include "Eigen/Dense"
 
@@ -17,20 +17,17 @@ int main() {
     const double t1 = 5.0;
     const double h = 0.01;
 
-    odelib::AdaptiveRK4Stepper<Eigen::Vector2d, double> stepper;
-    auto result = odelib::integrate(stepper, harmonic_oscillator, y0, t0, t1, h);
-    const auto& ys = result.states;
-    const auto& ts = result.times;
-    const auto& hs = result.hs;
+    odelib::RKDPStepper<Eigen::Vector2d, double> stepper;
+    auto ys = odelib::integrate(stepper, harmonic_oscillator, y0, t0, t1, h);
 
     std::cout << std::fixed << std::setprecision(6);
-    std::cout << "t\tAdaptive RK4\t\tStep Size\t\tExact\t\tError\n";
+    std::cout << "t\tRKDP\t\tExact\t\tError\n";
 
-    for (std::size_t i = 0; i < ys.size(); i += 10) {
-        double t = ts[i];
+    for (std::size_t i = 0; i < ys.size(); i += 100) {
+        double t = t0 + i * h;
         Eigen::Vector2d exact = Eigen::Vector2d(y0(0) * cos(t) + y0(1) * sin(t), -y0(0) * sin(t) + y0(1) * cos(t));
         Eigen::Vector2d error = (ys[i] - exact).cwiseAbs();
-        std::cout << t << "\t" << ys[i].transpose() << "\t" << hs[i] << "\t" << exact.transpose() << "\t" << error.transpose()
+        std::cout << t << "\t" << ys[i].transpose() << "\t" << exact.transpose() << "\t" << error.transpose()
                   << "\n";
     }
 

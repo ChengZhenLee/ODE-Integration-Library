@@ -245,6 +245,76 @@ build scaled_decay_adaptive_rk4.exe: CXX_EXECUTABLE_LINKER__scaled_decay_adaptiv
   TARGET_PDB = scaled_decay_adaptive_rk4.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir
 
+# =============================================================================
+# Object build statements for EXECUTABLE target harmonic_oscillator_rkdp
+
+
+#############################################
+# Order-only phony target for harmonic_oscillator_rkdp
+
+build cmake_object_order_depends_target_harmonic_oscillator_rkdp: phony || .
+
+build CMakeFiles/harmonic_oscillator_rkdp.dir/examples/harmonic_oscillator_rkdp.cpp.obj: CXX_COMPILER__harmonic_oscillator_rkdp_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/harmonic_oscillator_rkdp.cpp || cmake_object_order_depends_target_harmonic_oscillator_rkdp
+  DEP_FILE = CMakeFiles\harmonic_oscillator_rkdp.dir\examples\harmonic_oscillator_rkdp.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = CMakeFiles\harmonic_oscillator_rkdp.dir
+  OBJECT_FILE_DIR = CMakeFiles\harmonic_oscillator_rkdp.dir\examples
+  TARGET_SUPPORT_DIR = CMakeFiles\harmonic_oscillator_rkdp.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target harmonic_oscillator_rkdp
+
+
+#############################################
+# Link the executable harmonic_oscillator_rkdp.exe
+
+build harmonic_oscillator_rkdp.exe: CXX_EXECUTABLE_LINKER__harmonic_oscillator_rkdp_ CMakeFiles/harmonic_oscillator_rkdp.dir/examples/harmonic_oscillator_rkdp.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\harmonic_oscillator_rkdp.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = harmonic_oscillator_rkdp.exe
+  TARGET_IMPLIB = libharmonic_oscillator_rkdp.dll.a
+  TARGET_PDB = harmonic_oscillator_rkdp.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\harmonic_oscillator_rkdp.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target harmonic_oscillator_adaptive_rkdp
+
+
+#############################################
+# Order-only phony target for harmonic_oscillator_adaptive_rkdp
+
+build cmake_object_order_depends_target_harmonic_oscillator_adaptive_rkdp: phony || .
+
+build CMakeFiles/harmonic_oscillator_adaptive_rkdp.dir/examples/harmonic_oscillator_adaptive_rkdp.cpp.obj: CXX_COMPILER__harmonic_oscillator_adaptive_rkdp_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/harmonic_oscillator_adaptive_rkdp.cpp || cmake_object_order_depends_target_harmonic_oscillator_adaptive_rkdp
+  DEP_FILE = CMakeFiles\harmonic_oscillator_adaptive_rkdp.dir\examples\harmonic_oscillator_adaptive_rkdp.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = CMakeFiles\harmonic_oscillator_adaptive_rkdp.dir
+  OBJECT_FILE_DIR = CMakeFiles\harmonic_oscillator_adaptive_rkdp.dir\examples
+  TARGET_SUPPORT_DIR = CMakeFiles\harmonic_oscillator_adaptive_rkdp.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target harmonic_oscillator_adaptive_rkdp
+
+
+#############################################
+# Link the executable harmonic_oscillator_adaptive_rkdp.exe
+
+build harmonic_oscillator_adaptive_rkdp.exe: CXX_EXECUTABLE_LINKER__harmonic_oscillator_adaptive_rkdp_ CMakeFiles/harmonic_oscillator_adaptive_rkdp.dir/examples/harmonic_oscillator_adaptive_rkdp.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\harmonic_oscillator_adaptive_rkdp.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = harmonic_oscillator_adaptive_rkdp.exe
+  TARGET_IMPLIB = libharmonic_oscillator_adaptive_rkdp.dll.a
+  TARGET_PDB = harmonic_oscillator_adaptive_rkdp.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\harmonic_oscillator_adaptive_rkdp.dir
+
 
 #############################################
 # Utility command for test
@@ -496,6 +566,76 @@ build tests/test_harmonic_oscillator_adaptive_rk4.exe: CXX_EXECUTABLE_LINKER__te
   TARGET_PDB = test_harmonic_oscillator_adaptive_rk4.exe.dbg
   TARGET_SUPPORT_DIR = tests\CMakeFiles\test_harmonic_oscillator_adaptive_rk4.dir
 
+# =============================================================================
+# Object build statements for EXECUTABLE target test_harmonic_oscillator_rkdp
+
+
+#############################################
+# Order-only phony target for test_harmonic_oscillator_rkdp
+
+build cmake_object_order_depends_target_test_harmonic_oscillator_rkdp: phony || .
+
+build tests/CMakeFiles/test_harmonic_oscillator_rkdp.dir/test_harmonic_oscillator_rkdp.cpp.obj: CXX_COMPILER__test_harmonic_oscillator_rkdp_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/test_harmonic_oscillator_rkdp.cpp || cmake_object_order_depends_target_test_harmonic_oscillator_rkdp
+  DEP_FILE = tests\CMakeFiles\test_harmonic_oscillator_rkdp.dir\test_harmonic_oscillator_rkdp.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = tests\CMakeFiles\test_harmonic_oscillator_rkdp.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\test_harmonic_oscillator_rkdp.dir
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_harmonic_oscillator_rkdp.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_harmonic_oscillator_rkdp
+
+
+#############################################
+# Link the executable tests\test_harmonic_oscillator_rkdp.exe
+
+build tests/test_harmonic_oscillator_rkdp.exe: CXX_EXECUTABLE_LINKER__test_harmonic_oscillator_rkdp_ tests/CMakeFiles/test_harmonic_oscillator_rkdp.dir/test_harmonic_oscillator_rkdp.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = tests\CMakeFiles\test_harmonic_oscillator_rkdp.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = tests\test_harmonic_oscillator_rkdp.exe
+  TARGET_IMPLIB = tests\libtest_harmonic_oscillator_rkdp.dll.a
+  TARGET_PDB = test_harmonic_oscillator_rkdp.exe.dbg
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_harmonic_oscillator_rkdp.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_harmonic_oscillator_adaptive_rkdp
+
+
+#############################################
+# Order-only phony target for test_harmonic_oscillator_adaptive_rkdp
+
+build cmake_object_order_depends_target_test_harmonic_oscillator_adaptive_rkdp: phony || .
+
+build tests/CMakeFiles/test_harmonic_oscillator_adaptive_rkdp.dir/test_harmonic_oscillator_adaptive_rkdp.cpp.obj: CXX_COMPILER__test_harmonic_oscillator_adaptive_rkdp_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/test_harmonic_oscillator_adaptive_rkdp.cpp || cmake_object_order_depends_target_test_harmonic_oscillator_adaptive_rkdp
+  DEP_FILE = tests\CMakeFiles\test_harmonic_oscillator_adaptive_rkdp.dir\test_harmonic_oscillator_adaptive_rkdp.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = tests\CMakeFiles\test_harmonic_oscillator_adaptive_rkdp.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\test_harmonic_oscillator_adaptive_rkdp.dir
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_harmonic_oscillator_adaptive_rkdp.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_harmonic_oscillator_adaptive_rkdp
+
+
+#############################################
+# Link the executable tests\test_harmonic_oscillator_adaptive_rkdp.exe
+
+build tests/test_harmonic_oscillator_adaptive_rkdp.exe: CXX_EXECUTABLE_LINKER__test_harmonic_oscillator_adaptive_rkdp_ tests/CMakeFiles/test_harmonic_oscillator_adaptive_rkdp.dir/test_harmonic_oscillator_adaptive_rkdp.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = tests\CMakeFiles\test_harmonic_oscillator_adaptive_rkdp.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = tests\test_harmonic_oscillator_adaptive_rkdp.exe
+  TARGET_IMPLIB = tests\libtest_harmonic_oscillator_adaptive_rkdp.dll.a
+  TARGET_PDB = test_harmonic_oscillator_adaptive_rkdp.exe.dbg
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_harmonic_oscillator_adaptive_rkdp.dir
+
 
 #############################################
 # Utility command for test
@@ -541,7 +681,11 @@ build decay_rk4: phony decay_rk4.exe
 
 build harmonic_oscillator_adaptive_rk4: phony harmonic_oscillator_adaptive_rk4.exe
 
+build harmonic_oscillator_adaptive_rkdp: phony harmonic_oscillator_adaptive_rkdp.exe
+
 build harmonic_oscillator_rk4: phony harmonic_oscillator_rk4.exe
+
+build harmonic_oscillator_rkdp: phony harmonic_oscillator_rkdp.exe
 
 build scaled_decay_adaptive_rk4: phony scaled_decay_adaptive_rk4.exe
 
@@ -555,9 +699,17 @@ build test_harmonic_oscillator_adaptive_rk4: phony tests/test_harmonic_oscillato
 
 build test_harmonic_oscillator_adaptive_rk4.exe: phony tests/test_harmonic_oscillator_adaptive_rk4.exe
 
+build test_harmonic_oscillator_adaptive_rkdp: phony tests/test_harmonic_oscillator_adaptive_rkdp.exe
+
+build test_harmonic_oscillator_adaptive_rkdp.exe: phony tests/test_harmonic_oscillator_adaptive_rkdp.exe
+
 build test_harmonic_oscillator_rk4: phony tests/test_harmonic_oscillator_rk4.exe
 
 build test_harmonic_oscillator_rk4.exe: phony tests/test_harmonic_oscillator_rk4.exe
+
+build test_harmonic_oscillator_rkdp: phony tests/test_harmonic_oscillator_rkdp.exe
+
+build test_harmonic_oscillator_rkdp.exe: phony tests/test_harmonic_oscillator_rkdp.exe
 
 build test_rk4: phony tests/test_rk4.exe
 
@@ -579,14 +731,14 @@ build test_scaled_decay_rk4.exe: phony tests/test_scaled_decay_rk4.exe
 #############################################
 # Folder: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build
 
-build all: phony decay_euler.exe decay_rk4.exe scaled_decay_rk4.exe harmonic_oscillator_rk4.exe harmonic_oscillator_adaptive_rk4.exe scaled_decay_adaptive_rk4.exe tests/all
+build all: phony decay_euler.exe decay_rk4.exe scaled_decay_rk4.exe harmonic_oscillator_rk4.exe harmonic_oscillator_adaptive_rk4.exe scaled_decay_adaptive_rk4.exe harmonic_oscillator_rkdp.exe harmonic_oscillator_adaptive_rkdp.exe tests/all
 
 # =============================================================================
 
 #############################################
 # Folder: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests
 
-build tests/all: phony tests/test_euler.exe tests/test_rk4.exe tests/test_scaled_decay_rk4.exe tests/test_harmonic_oscillator_rk4.exe tests/test_scaled_decay_adaptive_rk4.exe tests/test_harmonic_oscillator_adaptive_rk4.exe
+build tests/all: phony tests/test_euler.exe tests/test_rk4.exe tests/test_scaled_decay_rk4.exe tests/test_harmonic_oscillator_rk4.exe tests/test_scaled_decay_adaptive_rk4.exe tests/test_harmonic_oscillator_adaptive_rk4.exe tests/test_harmonic_oscillator_rkdp.exe tests/test_harmonic_oscillator_adaptive_rkdp.exe
 
 # =============================================================================
 # Built-in targets

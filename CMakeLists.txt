@@ -25,5 +25,11 @@ target_link_libraries(harmonic_oscillator_adaptive_rk4 PRIVATE odelib)
 add_executable(scaled_decay_adaptive_rk4 examples/scaled_decay_adaptive_rk4.cpp)
 target_link_libraries(scaled_decay_adaptive_rk4 PRIVATE odelib)
 
+add_executable(harmonic_oscillator_rkdp examples/harmonic_oscillator_rkdp.cpp)
+target_link_libraries(harmonic_oscillator_rkdp PRIVATE odelib)
+
+add_executable(harmonic_oscillator_adaptive_rkdp examples/harmonic_oscillator_adaptive_rkdp.cpp)
+target_link_libraries(harmonic_oscillator_adaptive_rkdp PRIVATE odelib)
+
 enable_testing()
 add_subdirectory(tests)

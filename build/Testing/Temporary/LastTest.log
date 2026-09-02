@@ -1,10 +1,113 @@
-Start testing: Sep 01 23:00 Romance Daylight Time
+Start testing: Sep 02 13:40 Romance Daylight Time
 ----------------------------------------------------------
-5/6 Testing: test_scaled_decay_adaptive_rk4
-5/6 Test: test_scaled_decay_adaptive_rk4
+1/8 Testing: test_euler
+1/8 Test: test_euler
+Command: "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/test_euler.exe"
+Directory: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests
+"test_euler" start time: Sep 02 13:40 Romance Daylight Time
+Output:
+----------------------------------------------------------
+
+-- Accuracy Test ---------------------------
+  Euler value:          3.676954e-01
+  Exact value:          3.678794e-01
+  Error:                1.840164e-04
+[PASSED] Accuracy Test
+
+All test_euler checks passed.
+<end of output>
+Test time =   0.35 sec
+----------------------------------------------------------
+Test Passed.
+"test_euler" end time: Sep 02 13:40 Romance Daylight Time
+"test_euler" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/8 Testing: test_rk4
+2/8 Test: test_rk4
+Command: "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/test_rk4.exe"
+Directory: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests
+"test_rk4" start time: Sep 02 13:40 Romance Daylight Time
+Output:
+----------------------------------------------------------
+
+-- Accuracy Test ---------------------------
+  RK4 value (h):        3.678795e-01
+  Exact value:          3.678794e-01
+  Error (h):            1.997610e-08
+[PASSED] Accuracy Test
+
+-- Convergence Test ------------------------
+  RK4 value (h/2):      3.678794e-01
+  Error (h/2):          1.222742e-09
+  Error ratio:          1.633713e+01
+[PASSED] Convergence Test
+
+-- Euler Comparison Test -------------------
+  Euler error:          9.393519e-03
+  RK4 error:            1.997610e-08
+[PASSED] Euler Comparison Test
+
+All test_rk4 checks passed.
+<end of output>
+Test time =   0.27 sec
+----------------------------------------------------------
+Test Passed.
+"test_rk4" end time: Sep 02 13:40 Romance Daylight Time
+"test_rk4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/8 Testing: test_scaled_decay_rk4
+3/8 Test: test_scaled_decay_rk4
+Command: "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/test_scaled_decay_rk4.exe"
+Directory: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests
+"test_scaled_decay_rk4" start time: Sep 02 13:40 Romance Daylight Time
+Output:
+----------------------------------------------------------
+
+-- Accuracy Test ---------------------------
+  RK4 value (h):        6.065307e-01
+  Exact value:          6.065307e-01
+  Error (h):            1.007980e-09
+[PASSED] Accuracy Test
+
+All test_scaled_decay_rk4 checks passed.
+<end of output>
+Test time =   0.36 sec
+----------------------------------------------------------
+Test Passed.
+"test_scaled_decay_rk4" end time: Sep 02 13:40 Romance Daylight Time
+"test_scaled_decay_rk4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/8 Testing: test_harmonic_oscillator_rk4
+4/8 Test: test_harmonic_oscillator_rk4
+Command: "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/test_harmonic_oscillator_rk4.exe"
+Directory: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests
+"test_harmonic_oscillator_rk4" start time: Sep 02 13:40 Romance Daylight Time
+Output:
+----------------------------------------------------------
+
+-- Accuracy Test ---------------------------
+  RK4 value (h):        2.223244e+00 2.391337e-01
+  Exact value:          2.223244e+00 2.391336e-01
+  Error (h):            1.726700e-08 1.151718e-07
+[PASSED] Accuracy Test
+
+All test_harmonic_oscillator_rk4 checks passed.
+<end of output>
+Test time =   0.30 sec
+----------------------------------------------------------
+Test Passed.
+"test_harmonic_oscillator_rk4" end time: Sep 02 13:40 Romance Daylight Time
+"test_harmonic_oscillator_rk4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/8 Testing: test_scaled_decay_adaptive_rk4
+5/8 Test: test_scaled_decay_adaptive_rk4
 Command: "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/test_scaled_decay_adaptive_rk4.exe"
 Directory: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests
-"test_scaled_decay_adaptive_rk4" start time: Sep 01 23:00 Romance Daylight Time
+"test_scaled_decay_adaptive_rk4" start time: Sep 02 13:40 Romance Daylight Time
 Output:
 ----------------------------------------------------------
 
@@ -17,18 +120,18 @@ Output:
 
 All test_scaled_decay_adaptive_rk4 checks passed.
 <end of output>
-Test time =   0.41 sec
+Test time =   0.46 sec
 ----------------------------------------------------------
 Test Passed.
-"test_scaled_decay_adaptive_rk4" end time: Sep 01 23:00 Romance Daylight Time
+"test_scaled_decay_adaptive_rk4" end time: Sep 02 13:40 Romance Daylight Time
 "test_scaled_decay_adaptive_rk4" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-6/6 Testing: test_harmonic_oscillator_adaptive_rk4
-6/6 Test: test_harmonic_oscillator_adaptive_rk4
+6/8 Testing: test_harmonic_oscillator_adaptive_rk4
+6/8 Test: test_harmonic_oscillator_adaptive_rk4
 Command: "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/test_harmonic_oscillator_adaptive_rk4.exe"
 Directory: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests
-"test_harmonic_oscillator_adaptive_rk4" start time: Sep 01 23:00 Romance Daylight Time
+"test_harmonic_oscillator_adaptive_rk4" start time: Sep 02 13:40 Romance Daylight Time
 Output:
 ----------------------------------------------------------
 
@@ -41,11 +144,58 @@ Output:
 
 All test_harmonic_oscillator_adaptive_rk4 checks passed.
 <end of output>
-Test time =   0.49 sec
+Test time =   0.32 sec
 ----------------------------------------------------------
 Test Passed.
-"test_harmonic_oscillator_adaptive_rk4" end time: Sep 01 23:00 Romance Daylight Time
+"test_harmonic_oscillator_adaptive_rk4" end time: Sep 02 13:40 Romance Daylight Time
 "test_harmonic_oscillator_adaptive_rk4" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 01 23:00 Romance Daylight Time
+7/8 Testing: test_harmonic_oscillator_rkdp
+7/8 Test: test_harmonic_oscillator_rkdp
+Command: "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/test_harmonic_oscillator_rkdp.exe"
+Directory: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests
+"test_harmonic_oscillator_rkdp" start time: Sep 02 13:40 Romance Daylight Time
+Output:
+----------------------------------------------------------
+
+-- Accuracy Test ---------------------------
+  RKDP value (h):       2.223244e+00 2.391336e-01
+  Exact value:          2.223244e+00 2.391336e-01
+  Error (h):            1.906697e-10 3.723080e-11
+[PASSED] Accuracy Test
+
+All test_harmonic_oscillator_rkdp checks passed.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_harmonic_oscillator_rkdp" end time: Sep 02 13:40 Romance Daylight Time
+"test_harmonic_oscillator_rkdp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/8 Testing: test_harmonic_oscillator_adaptive_rkdp
+8/8 Test: test_harmonic_oscillator_adaptive_rkdp
+Command: "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/test_harmonic_oscillator_adaptive_rkdp.exe"
+Directory: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests
+"test_harmonic_oscillator_adaptive_rkdp" start time: Sep 02 13:40 Romance Daylight Time
+Output:
+----------------------------------------------------------
+
+-- Accuracy Test ---------------------------
+  Adaptive RKDP value:  2.223244e+00 2.391336e-01
+  Exact value:          2.223244e+00 2.391336e-01
+  Error:                1.311477e-09 3.140300e-10
+  Final time:           1.000000e+00
+[PASSED] Accuracy Test
+
+All test_harmonic_oscillator_adaptive_rkdp checks passed.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_harmonic_oscillator_adaptive_rkdp" end time: Sep 02 13:40 Romance Daylight Time
+"test_harmonic_oscillator_adaptive_rkdp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 02 13:40 Romance Daylight Time

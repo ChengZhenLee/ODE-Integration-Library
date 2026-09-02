@@ -3,7 +3,7 @@
 #include <iomanip>
 
 
-#include "odelib/steppers/adaptive_rk4.hpp"
+#include "odelib/steppers/adaptive_rkdp.hpp"
 #include "odelib/integrate.hpp"
 #include "Eigen/Dense"
 
@@ -17,14 +17,14 @@ int main() {
     const double t1 = 5.0;
     const double h = 0.01;
 
-    odelib::AdaptiveRK4Stepper<Eigen::Vector2d, double> stepper;
+    odelib::AdaptiveRKDPStepper<Eigen::Vector2d, double> stepper;
     auto result = odelib::integrate(stepper, harmonic_oscillator, y0, t0, t1, h);
     const auto& ys = result.states;
     const auto& ts = result.times;
     const auto& hs = result.hs;
 
     std::cout << std::fixed << std::setprecision(6);
-    std::cout << "t\tAdaptive RK4\t\tStep Size\t\tExact\t\tError\n";
+    std::cout << "t\tAdaptive RKDP\t\tStep Size\t\tExact\t\tError\n";
 
     for (std::size_t i = 0; i < ys.size(); i += 10) {
         double t = ts[i];

@@ -35,21 +35,24 @@ struct AdaptiveRK4Stepper {
             State y_smaller = stepper.step(f, stepper.step(f, y, t, h/2), t + h/2, h/2);
 
             double errorMagnitude = error_magnitude((y_next - y_smaller));
-            Time h_next;
+            Time hSuggested;
             bool accepted;
             
-            if (errorMagnitude < tol / 10) {
-                h_next = h * 1.5;
+            // Expand the step-size if the error magnitude is a wide margin lower than the tolerance
+            if (errorMagnitude < tol / 10.0) {
+                hSuggested = h * 1.5;
                 accepted = true;
+            // Keep the suggested step size constant if not far below the tolerance
             } else if (errorMagnitude < tol) {
-                h_next = h;
+                hSuggested = h;
                 accepted = true;
+            // Suggest a smaller step size if the error exceeds tolerance
             } else {
-                h_next = h/2;
+                hSuggested = h / 2.0;
                 accepted = false;
             }
 
-            return { y_next, h, h_next, accepted };
+            return { y_next, h, hSuggested, accepted };
         }
 };
 
