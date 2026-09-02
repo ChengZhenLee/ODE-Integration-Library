@@ -22,14 +22,15 @@ int main() {
     const auto& ts = result.times;
 
     std::cout << std::fixed << std::setprecision(6);
-    std::cout << "t\tAdaptive RK4\t\tExact\t\tError\n";
+    std::cout << std::left << std::setw(10) << "t" << std::setw(14) << "Adaptive RK4"
+              << std::setw(14) << "Exact" << std::setw(14) << "Error" << "\n";
 
-    for (std::size_t i = 0; i < ys.size(); i ++) {
+    for (std::size_t i = 0; i < ys.size(); i++) {
         double t = ts[i];
         double exact = y0 * std::exp(-t * k);
         double error = std::abs(ys[i] - exact);
-        std::cout << t << "\t" << ys[i] << "\t" << exact << "\t" << error
-                  << "\n";
+        std::cout << std::left << std::setw(10) << t << std::setw(14) << ys[i]
+                  << std::setw(14) << exact << std::setw(14) << error << "\n";
     }
 
     return 0;

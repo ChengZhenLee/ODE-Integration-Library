@@ -31,5 +31,8 @@ target_link_libraries(harmonic_oscillator_rkdp PRIVATE odelib)
 add_executable(harmonic_oscillator_adaptive_rkdp examples/harmonic_oscillator_adaptive_rkdp.cpp)
 target_link_libraries(harmonic_oscillator_adaptive_rkdp PRIVATE odelib)
 
+add_executable(gbm_euler_maruyama examples/gbm_euler_maruyama.cpp)
+target_link_libraries(gbm_euler_maruyama PRIVATE odelib)
+
 enable_testing()
 add_subdirectory(tests)

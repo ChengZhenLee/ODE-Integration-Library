@@ -1,47 +1,90 @@
 # ninja log v7
-21	694	8100523997247013	build.ninja	ccd3d6f3f1b1daa9
-21	694	8100523996735549	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
-21	694	8100523997077258	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
-21	694	8100523996784516	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-21	694	8100523997162535	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-390	9986	8099995473004252	tests/CMakeFiles/test_euler.dir/test_euler.cpp.obj	3e310349e6c350b9
-10121	16425	8099995571018941	tests/test_euler.exe	857c6c01f2b394d9
-127	9768	8099995470404217	CMakeFiles/decay_euler.dir/examples/decay_euler.cpp.obj	7449eae8977cda1b
-9772	16368	8099995566851271	decay_euler.exe	8711c6902c510352
-183	9699	8099995471005395	CMakeFiles/decay_rk4.dir/examples/decay_rk4.cpp.obj	741bfc5dcb2f5f55
-9701	16810	8099995566123989	decay_rk4.exe	887b8292019dc1b5
-416	10346	8099995475394867	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	229584e731fb65d8
-10366	16789	8099995572780258	tests/test_rk4.exe	706ae9fe5cbe971d
+7	413	8100667461699667	build.ninja	ccd3d6f3f1b1daa9
+7	413	8100667461030253	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
+7	413	8100667461498928	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
+7	413	8100667461030253	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+7	413	8100667461498928	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+176	3400	8100659054766058	tests/CMakeFiles/test_euler.dir/test_euler.cpp.obj	3e310349e6c350b9
+4004	6020	8100659754704712	tests/test_euler.exe	857c6c01f2b394d9
+55	3397	8100659053552990	CMakeFiles/decay_euler.dir/examples/decay_euler.cpp.obj	7449eae8977cda1b
+121	1950	8100659715877078	decay_euler.exe	8711c6902c510352
+71	3384	8100659053709421	CMakeFiles/decay_rk4.dir/examples/decay_rk4.cpp.obj	741bfc5dcb2f5f55
+149	2019	8100659716211518	decay_rk4.exe	887b8292019dc1b5
+28	2430	8100659714839959	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	229584e731fb65d8
+4021	5529	8100659754874105	tests/test_rk4.exe	706ae9fe5cbe971d
 215	13223	8099674309113131	CMakeFiles/lambda_rk4.dir/examples/lambda_rk4.cpp.obj	ca219bb6c1790de7
 13229	14938	8099674439223011	lambda_rk4.exe	5096e5d93df4b0e2
-209	9469	8099995471365963	CMakeFiles/scaled_decay_rk4.dir/examples/scaled_decay_rk4.cpp.obj	b043b3d9fa885c04
-9561	14757	8099995565114953	scaled_decay_rk4.exe	9128a40820aa01c
+87	3394	8100659053864713	CMakeFiles/scaled_decay_rk4.dir/examples/scaled_decay_rk4.cpp.obj	b043b3d9fa885c04
+1982	3940	8100659734449601	scaled_decay_rk4.exe	9128a40820aa01c
 49	11786	8099714095082029	CMakeFiles/decay_rk4_vector.dir/examples/decay_rk4_vector.cpp.obj	137048c07ebb4ae5
 11820	14588	8099714212871684	decay_rk4_vector.exe	50f09883d13bdd8b
 79	4680	8099722518527168	tests/CMakeFiles/test_euler.dir/test_utils.cpp.obj	9024e9d3166644ba
 240	4652	8099722521153872	tests/CMakeFiles/test_scaled_decay_rk4.dir/test_utils.cpp.obj	2570e8f6c54eaa02
 174	4678	8099722519612203	tests/CMakeFiles/test_rk4.dir/test_utils.cpp.obj	e4fdb75f17f2e907
-768	10244	8099995478723668	tests/CMakeFiles/test_scaled_decay_rk4.dir/test_scaled_decay_rk4.cpp.obj	db22dc07ea6de178
-10260	16733	8099995571918933	tests/test_scaled_decay_rk4.exe	eaf5eea68a495d13
+38	2509	8100659715063838	tests/CMakeFiles/test_scaled_decay_rk4.dir/test_scaled_decay_rk4.cpp.obj	db22dc07ea6de178
+4040	5348	8100659755041117	tests/test_scaled_decay_rk4.exe	eaf5eea68a495d13
 182	11053	8099731215194595	tests/CMakeFiles/test_decay_rk4_vector.dir/test_decay_rk4_vector.cpp.obj	b063195e30a68ed4
 11053	11935	8099731323914942	tests/test_decay_rk4_vector.exe	91952aee66dca1f5
-248	17895	8099995472214704	CMakeFiles/harmonic_oscillator_rk4.dir/examples/harmonic_oscillator_rk4.cpp.obj	dab6d217ab2ae890
-17896	19654	8099995648073625	harmonic_oscillator_rk4.exe	595198cc097fdba3
-1073	18069	8099995482012851	tests/CMakeFiles/test_harmonic_oscillator_rk4.dir/test_harmonic_oscillator_rk4.cpp.obj	68c5d43a7106b593
-18078	19948	8099995649914384	tests/test_harmonic_oscillator_rk4.exe	4b1b777066535c29
-34	3869	8100515257545875	CMakeFiles/harmonic_oscillator_adaptive_rk4.dir/examples/harmonic_oscillator_adaptive_rk4.cpp.obj	c7416811f54a33fb
-3872	4507	8100515295932040	harmonic_oscillator_adaptive_rk4.exe	98a81645f7f52230
-207	5560	8100511884964215	CMakeFiles/scaled_decay_adaptive_rk4.dir/examples/scaled_decay_adaptive_rk4.cpp.obj	d0ac2a92e22d22f2
-5607	8842	8100511939528036	scaled_decay_adaptive_rk4.exe	b2ff231ddb99c1aa
-258	5729	8100511885567814	tests/CMakeFiles/test_scaled_decay_adaptive_rk4.dir/test_scaled_decay_adaptive_rk4.cpp.obj	38b179705ed6583
-5731	8904	8100511940252228	tests/test_scaled_decay_adaptive_rk4.exe	388299ddf4b5a81b
-272	13016	8100511885693650	tests/CMakeFiles/test_harmonic_oscillator_adaptive_rk4.dir/test_harmonic_oscillator_adaptive_rk4.cpp.obj	1030e1a7970dfb50
-180	1432	8100512361059676	tests/test_harmonic_oscillator_adaptive_rk4.exe	a4c49608684b2222
-220	13852	8100511885130831	CMakeFiles/harmonic_oscillator_rkdp.dir/examples/harmonic_oscillator_rkdp.cpp.obj	38e9775ff946f789
-147	1434	8100512360618122	harmonic_oscillator_rkdp.exe	2b55483f5e2a4013
-47	3676	8100517372046476	CMakeFiles/harmonic_oscillator_adaptive_rkdp.dir/examples/harmonic_oscillator_adaptive_rkdp.cpp.obj	a09e99b74d005b8a
-3678	4104	8100517408334903	harmonic_oscillator_adaptive_rkdp.exe	14304cff89ac240d
-34	5663	8100524069129538	tests/CMakeFiles/test_harmonic_oscillator_rkdp.dir/test_harmonic_oscillator_rkdp.cpp.obj	58cbbb30082a4385
-48	5694	8100524069280273	tests/CMakeFiles/test_harmonic_oscillator_adaptive_rkdp.dir/test_harmonic_oscillator_adaptive_rkdp.cpp.obj	d0b3a2a47f4e8b8c
-5666	6337	8100524125449802	tests/test_harmonic_oscillator_rkdp.exe	cb47d367d4b5c937
-5694	6345	8100524125732067	tests/test_harmonic_oscillator_adaptive_rkdp.exe	a4fb51c82fd38552
+102	5451	8100659054039857	CMakeFiles/harmonic_oscillator_rk4.dir/examples/harmonic_oscillator_rk4.cpp.obj	dab6d217ab2ae890
+2039	4020	8100659735446165	harmonic_oscillator_rk4.exe	595198cc097fdba3
+51	6441	8100659715170755	tests/CMakeFiles/test_harmonic_oscillator_rk4.dir/test_harmonic_oscillator_rk4.cpp.obj	68c5d43a7106b593
+6442	7126	8100659779086546	tests/test_harmonic_oscillator_rk4.exe	4b1b777066535c29
+116	5582	8100659054136148	CMakeFiles/harmonic_oscillator_adaptive_rk4.dir/examples/harmonic_oscillator_adaptive_rk4.cpp.obj	c7416811f54a33fb
+2453	4036	8100659739186363	harmonic_oscillator_adaptive_rk4.exe	98a81645f7f52230
+135	3377	8100659054369788	CMakeFiles/scaled_decay_adaptive_rk4.dir/examples/scaled_decay_adaptive_rk4.cpp.obj	d0ac2a92e22d22f2
+2474	4190	8100659739439539	scaled_decay_adaptive_rk4.exe	b2ff231ddb99c1aa
+67	2554	8100659715342349	tests/CMakeFiles/test_scaled_decay_adaptive_rk4.dir/test_scaled_decay_adaptive_rk4.cpp.obj	38b179705ed6583
+4058	5354	8100659755254141	tests/test_scaled_decay_adaptive_rk4.exe	388299ddf4b5a81b
+82	6495	8100659715480107	tests/CMakeFiles/test_harmonic_oscillator_adaptive_rk4.dir/test_harmonic_oscillator_adaptive_rk4.cpp.obj	1030e1a7970dfb50
+6496	7128	8100659779624668	tests/test_harmonic_oscillator_adaptive_rk4.exe	a4c49608684b2222
+148	5810	8100659054481786	CMakeFiles/harmonic_oscillator_rkdp.dir/examples/harmonic_oscillator_rkdp.cpp.obj	38e9775ff946f789
+2509	3966	8100659739761795	harmonic_oscillator_rkdp.exe	2b55483f5e2a4013
+157	6311	8100659054562430	CMakeFiles/harmonic_oscillator_adaptive_rkdp.dir/examples/harmonic_oscillator_adaptive_rkdp.cpp.obj	a09e99b74d005b8a
+2555	4058	8100659740198384	harmonic_oscillator_adaptive_rkdp.exe	14304cff89ac240d
+94	7173	8100659715639853	tests/CMakeFiles/test_harmonic_oscillator_rkdp.dir/test_harmonic_oscillator_rkdp.cpp.obj	58cbbb30082a4385
+108	7220	8100659715741946	tests/CMakeFiles/test_harmonic_oscillator_adaptive_rkdp.dir/test_harmonic_oscillator_adaptive_rkdp.cpp.obj	d0b3a2a47f4e8b8c
+7174	7711	8100659786339746	tests/test_harmonic_oscillator_rkdp.exe	cb47d367d4b5c937
+7221	7723	8100659786868760	tests/test_harmonic_oscillator_adaptive_rkdp.exe	a4fb51c82fd38552
+30	1123	8100664818992164	CMakeFiles/gbm_euler_maruyama.dir/examples/gbm_euler_maruyama.cpp.obj	9b52bb337d4045fe
+1128	1588	8100664830026158	gbm_euler_maruyama.exe	9d1793fc6a9d3620
+20	1581	8100667139138333	tests/CMakeFiles/test_euler_maruyama.dir/test_euler_maruyama.cpp.obj	c315dadfb7faf279
+1583	2023	8100667154765144	tests/test_euler_maruyama.exe	6903be8e8bac4349
+9	477	8100667461699667	build.ninja	ccd3d6f3f1b1daa9
+9	477	8100667461699667	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
+9	477	8100667461699667	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
+9	477	8100667461699667	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+9	477	8100667461699667	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+65	1148	8100667462972941	tests/CMakeFiles/test_gbm_euler_maruyama.dir/test_gbm_euler_maruyama.cpp.obj	ddbf45fed6ff676a
+1148	1509	8100667473732106	tests/test_gbm_euler_maruyama.exe	f1086ef230d80d63
+16	1108	8100667840757263	tests/CMakeFiles/test_gbm_euler_maruyama.dir/test_gbm_euler_maruyama.cpp.obj	ddbf45fed6ff676a
+1109	1521	8100667851683463	tests/test_gbm_euler_maruyama.exe	f1086ef230d80d63
+17	1311	8100672729321511	tests/CMakeFiles/test_gbm_euler_maruyama.dir/test_gbm_euler_maruyama.cpp.obj	ddbf45fed6ff676a
+1313	1772	8100672742210934	tests/test_gbm_euler_maruyama.exe	f1086ef230d80d63
+16	2007	8100676209156138	tests/CMakeFiles/test_gbm_euler_maruyama.dir/test_gbm_euler_maruyama.cpp.obj	ddbf45fed6ff676a
+2009	2493	8100676229081101	tests/test_gbm_euler_maruyama.exe	f1086ef230d80d63
+17	1471	8100680783240017	tests/CMakeFiles/test_gbm_euler_maruyama.dir/test_gbm_euler_maruyama.cpp.obj	ddbf45fed6ff676a
+1473	2247	8100680797796583	tests/test_gbm_euler_maruyama.exe	f1086ef230d80d63
+21	1081	8100681394932894	tests/CMakeFiles/test_gbm_euler_maruyama.dir/test_gbm_euler_maruyama.cpp.obj	ddbf45fed6ff676a
+1082	1551	8100681405609764	tests/test_gbm_euler_maruyama.exe	f1086ef230d80d63
+1005	4570	8100683346813044	CMakeFiles/gbm_euler_maruyama.dir/examples/gbm_euler_maruyama.cpp.obj	9b52bb337d4045fe
+829	4596	8100683344944228	CMakeFiles/decay_euler.dir/examples/decay_euler.cpp.obj	7449eae8977cda1b
+934	4614	8100683346107010	CMakeFiles/scaled_decay_rk4.dir/examples/scaled_decay_rk4.cpp.obj	b043b3d9fa885c04
+1014	4633	8100683346896117	tests/CMakeFiles/test_gbm_euler_maruyama.dir/test_gbm_euler_maruyama.cpp.obj	ddbf45fed6ff676a
+922	4651	8100683345984194	CMakeFiles/decay_rk4.dir/examples/decay_rk4.cpp.obj	741bfc5dcb2f5f55
+963	4670	8100683346395059	CMakeFiles/scaled_decay_adaptive_rk4.dir/examples/scaled_decay_adaptive_rk4.cpp.obj	d0ac2a92e22d22f2
+4634	6351	8100683383103074	tests/test_gbm_euler_maruyama.exe	f1086ef230d80d63
+4651	6352	8100683383275626	decay_rk4.exe	887b8292019dc1b5
+4574	6394	8100683382481166	gbm_euler_maruyama.exe	9d1793fc6a9d3620
+4670	6885	8100683383461055	scaled_decay_adaptive_rk4.exe	b2ff231ddb99c1aa
+4615	6920	8100683382889739	scaled_decay_rk4.exe	9128a40820aa01c
+4597	6955	8100683382691036	decay_euler.exe	8711c6902c510352
+945	8111	8100683346214122	CMakeFiles/harmonic_oscillator_rk4.dir/examples/harmonic_oscillator_rk4.cpp.obj	dab6d217ab2ae890
+954	8171	8100683346270887	CMakeFiles/harmonic_oscillator_adaptive_rk4.dir/examples/harmonic_oscillator_adaptive_rk4.cpp.obj	c7416811f54a33fb
+973	8851	8100683346495712	CMakeFiles/harmonic_oscillator_rkdp.dir/examples/harmonic_oscillator_rkdp.cpp.obj	38e9775ff946f789
+8112	8890	8100683417845598	harmonic_oscillator_rk4.exe	595198cc097fdba3
+8172	8915	8100683418485503	harmonic_oscillator_adaptive_rk4.exe	98a81645f7f52230
+982	9028	8100683346518185	CMakeFiles/harmonic_oscillator_adaptive_rkdp.dir/examples/harmonic_oscillator_adaptive_rkdp.cpp.obj	a09e99b74d005b8a
+8851	9384	8100683425278030	harmonic_oscillator_rkdp.exe	2b55483f5e2a4013
+9028	9568	8100683427046984	harmonic_oscillator_adaptive_rkdp.exe	14304cff89ac240d
+84	1547	8100683759157585	tests/CMakeFiles/test_gbm_euler_maruyama.dir/test_gbm_euler_maruyama.cpp.obj	ddbf45fed6ff676a
+1547	2038	8100683773790855	tests/test_gbm_euler_maruyama.exe	f1086ef230d80d63

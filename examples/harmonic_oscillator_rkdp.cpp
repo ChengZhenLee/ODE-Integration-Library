@@ -21,14 +21,19 @@ int main() {
     auto ys = odelib::integrate(stepper, harmonic_oscillator, y0, t0, t1, h);
 
     std::cout << std::fixed << std::setprecision(6);
-    std::cout << "t\tRKDP\t\tExact\t\tError\n";
+    std::cout << std::left << std::setw(10) << "t"
+              << std::setw(12) << "RKDP x" << std::setw(12) << "RKDP v"
+              << std::setw(12) << "Exact x" << std::setw(12) << "Exact v"
+              << std::setw(12) << "Error x" << std::setw(12) << "Error v" << "\n";
 
     for (std::size_t i = 0; i < ys.size(); i += 100) {
         double t = t0 + i * h;
         Eigen::Vector2d exact = Eigen::Vector2d(y0(0) * cos(t) + y0(1) * sin(t), -y0(0) * sin(t) + y0(1) * cos(t));
         Eigen::Vector2d error = (ys[i] - exact).cwiseAbs();
-        std::cout << t << "\t" << ys[i].transpose() << "\t" << exact.transpose() << "\t" << error.transpose()
-                  << "\n";
+        std::cout << std::left << std::setw(10) << t
+                  << std::setw(12) << ys[i](0) << std::setw(12) << ys[i](1)
+                  << std::setw(12) << exact(0) << std::setw(12) << exact(1)
+                  << std::setw(12) << error(0) << std::setw(12) << error(1) << "\n";
     }
 
     return 0;

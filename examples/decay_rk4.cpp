@@ -19,14 +19,15 @@ int main() {
     auto ys = odelib::integrate(stepper, decay, y0, t0, t1, h);
 
     std::cout << std::fixed << std::setprecision(6);
-    std::cout << "t\tRK4\t\tExact\t\tError\n";
+    std::cout << std::left << std::setw(10) << "t" << std::setw(14) << "RK4"
+              << std::setw(14) << "Exact" << std::setw(14) << "Error" << "\n";
 
     for (std::size_t i = 0; i < ys.size(); i += 100) {
         double t = t0 + i * h;
         double exact = y0 * std::exp(-t);
         double error = std::abs(ys[i] - exact);
-        std::cout << t << "\t" << ys[i] << "\t" << exact << "\t" << error
-                  << "\n";
+        std::cout << std::left << std::setw(10) << t << std::setw(14) << ys[i]
+                  << std::setw(14) << exact << std::setw(14) << error << "\n";
     }
 
     return 0;
