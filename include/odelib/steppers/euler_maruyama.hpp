@@ -22,6 +22,11 @@ struct EulerMaruyamaStepper {
 
             return y + f(t, y) * h + g(t, y) * distribution(engine);
         }
+
+        template <typename Drift, typename Diffusion>
+        State step(Drift&& f, Diffusion&& g, State y, Time t, Time h, Time dW) {
+            return y + f(t, y) * h + g(t, y) * dW;
+        }
 };
 
 }

@@ -350,6 +350,41 @@ build gbm_euler_maruyama.exe: CXX_EXECUTABLE_LINKER__gbm_euler_maruyama_ CMakeFi
   TARGET_PDB = gbm_euler_maruyama.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\gbm_euler_maruyama.dir
 
+# =============================================================================
+# Object build statements for EXECUTABLE target gbm_milstein
+
+
+#############################################
+# Order-only phony target for gbm_milstein
+
+build cmake_object_order_depends_target_gbm_milstein: phony || .
+
+build CMakeFiles/gbm_milstein.dir/examples/gbm_milstein.cpp.obj: CXX_COMPILER__gbm_milstein_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/gbm_milstein.cpp || cmake_object_order_depends_target_gbm_milstein
+  DEP_FILE = CMakeFiles\gbm_milstein.dir\examples\gbm_milstein.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = CMakeFiles\gbm_milstein.dir
+  OBJECT_FILE_DIR = CMakeFiles\gbm_milstein.dir\examples
+  TARGET_SUPPORT_DIR = CMakeFiles\gbm_milstein.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target gbm_milstein
+
+
+#############################################
+# Link the executable gbm_milstein.exe
+
+build gbm_milstein.exe: CXX_EXECUTABLE_LINKER__gbm_milstein_ CMakeFiles/gbm_milstein.dir/examples/gbm_milstein.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\gbm_milstein.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = gbm_milstein.exe
+  TARGET_IMPLIB = libgbm_milstein.dll.a
+  TARGET_PDB = gbm_milstein.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\gbm_milstein.dir
+
 
 #############################################
 # Utility command for test
@@ -706,6 +741,41 @@ build tests/test_gbm_euler_maruyama.exe: CXX_EXECUTABLE_LINKER__test_gbm_euler_m
   TARGET_PDB = test_gbm_euler_maruyama.exe.dbg
   TARGET_SUPPORT_DIR = tests\CMakeFiles\test_gbm_euler_maruyama.dir
 
+# =============================================================================
+# Object build statements for EXECUTABLE target test_gbm_milstein
+
+
+#############################################
+# Order-only phony target for test_gbm_milstein
+
+build cmake_object_order_depends_target_test_gbm_milstein: phony || .
+
+build tests/CMakeFiles/test_gbm_milstein.dir/test_gbm_milstein.cpp.obj: CXX_COMPILER__test_gbm_milstein_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/test_gbm_milstein.cpp || cmake_object_order_depends_target_test_gbm_milstein
+  DEP_FILE = tests\CMakeFiles\test_gbm_milstein.dir\test_gbm_milstein.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = tests\CMakeFiles\test_gbm_milstein.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\test_gbm_milstein.dir
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_gbm_milstein.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_gbm_milstein
+
+
+#############################################
+# Link the executable tests\test_gbm_milstein.exe
+
+build tests/test_gbm_milstein.exe: CXX_EXECUTABLE_LINKER__test_gbm_milstein_ tests/CMakeFiles/test_gbm_milstein.dir/test_gbm_milstein.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = tests\CMakeFiles\test_gbm_milstein.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = tests\test_gbm_milstein.exe
+  TARGET_IMPLIB = tests\libtest_gbm_milstein.dll.a
+  TARGET_PDB = test_gbm_milstein.exe.dbg
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_gbm_milstein.dir
+
 
 #############################################
 # Utility command for test
@@ -751,6 +821,8 @@ build decay_rk4: phony decay_rk4.exe
 
 build gbm_euler_maruyama: phony gbm_euler_maruyama.exe
 
+build gbm_milstein: phony gbm_milstein.exe
+
 build harmonic_oscillator_adaptive_rk4: phony harmonic_oscillator_adaptive_rk4.exe
 
 build harmonic_oscillator_adaptive_rkdp: phony harmonic_oscillator_adaptive_rkdp.exe
@@ -770,6 +842,10 @@ build test_euler.exe: phony tests/test_euler.exe
 build test_gbm_euler_maruyama: phony tests/test_gbm_euler_maruyama.exe
 
 build test_gbm_euler_maruyama.exe: phony tests/test_gbm_euler_maruyama.exe
+
+build test_gbm_milstein: phony tests/test_gbm_milstein.exe
+
+build test_gbm_milstein.exe: phony tests/test_gbm_milstein.exe
 
 build test_harmonic_oscillator_adaptive_rk4: phony tests/test_harmonic_oscillator_adaptive_rk4.exe
 
@@ -807,14 +883,14 @@ build test_scaled_decay_rk4.exe: phony tests/test_scaled_decay_rk4.exe
 #############################################
 # Folder: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build
 
-build all: phony decay_euler.exe decay_rk4.exe scaled_decay_rk4.exe harmonic_oscillator_rk4.exe harmonic_oscillator_adaptive_rk4.exe scaled_decay_adaptive_rk4.exe harmonic_oscillator_rkdp.exe harmonic_oscillator_adaptive_rkdp.exe gbm_euler_maruyama.exe tests/all
+build all: phony decay_euler.exe decay_rk4.exe scaled_decay_rk4.exe harmonic_oscillator_rk4.exe harmonic_oscillator_adaptive_rk4.exe scaled_decay_adaptive_rk4.exe harmonic_oscillator_rkdp.exe harmonic_oscillator_adaptive_rkdp.exe gbm_euler_maruyama.exe gbm_milstein.exe tests/all
 
 # =============================================================================
 
 #############################################
 # Folder: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests
 
-build tests/all: phony tests/test_euler.exe tests/test_rk4.exe tests/test_scaled_decay_rk4.exe tests/test_harmonic_oscillator_rk4.exe tests/test_scaled_decay_adaptive_rk4.exe tests/test_harmonic_oscillator_adaptive_rk4.exe tests/test_harmonic_oscillator_rkdp.exe tests/test_harmonic_oscillator_adaptive_rkdp.exe tests/test_gbm_euler_maruyama.exe
+build tests/all: phony tests/test_euler.exe tests/test_rk4.exe tests/test_scaled_decay_rk4.exe tests/test_harmonic_oscillator_rk4.exe tests/test_scaled_decay_adaptive_rk4.exe tests/test_harmonic_oscillator_adaptive_rk4.exe tests/test_harmonic_oscillator_rkdp.exe tests/test_harmonic_oscillator_adaptive_rkdp.exe tests/test_gbm_euler_maruyama.exe tests/test_gbm_milstein.exe
 
 # =============================================================================
 # Built-in targets

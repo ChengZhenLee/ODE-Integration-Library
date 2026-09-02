@@ -71,4 +71,19 @@ auto integrate(Stepper& stepper, Drift&& f, Diffusion&& g, State y0, Time t0, Ti
     return res;
 };
 
+
+template <typename Stepper, typename Drift, typename Diffusion, typename DiffusionDerivative, typename State, typename Time>
+auto integrate(Stepper& stepper, Drift&& f, Diffusion&& g, DiffusionDerivative&& gPrime, State y0, Time t0, Time t1, Time h) {
+    std::vector<State> res{y0};
+
+    Time t = t0;
+
+    while (t < t1) {
+        res.push_back(stepper.step(f, g, gPrime, res.back(), t, h));
+        t += h;
+    }
+
+    return res;
+}
+
 }

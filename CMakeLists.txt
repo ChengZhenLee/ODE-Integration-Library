@@ -34,5 +34,8 @@ target_link_libraries(harmonic_oscillator_adaptive_rkdp PRIVATE odelib)
 add_executable(gbm_euler_maruyama examples/gbm_euler_maruyama.cpp)
 target_link_libraries(gbm_euler_maruyama PRIVATE odelib)
 
+add_executable(gbm_milstein examples/gbm_milstein.cpp)
+target_link_libraries(gbm_milstein PRIVATE odelib)
+
 enable_testing()
 add_subdirectory(tests)
