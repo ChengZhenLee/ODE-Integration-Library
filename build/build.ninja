@@ -385,6 +385,41 @@ build gbm_milstein.exe: CXX_EXECUTABLE_LINKER__gbm_milstein_ CMakeFiles/gbm_mils
   TARGET_PDB = gbm_milstein.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\gbm_milstein.dir
 
+# =============================================================================
+# Object build statements for EXECUTABLE target black_scholes
+
+
+#############################################
+# Order-only phony target for black_scholes
+
+build cmake_object_order_depends_target_black_scholes: phony || .
+
+build CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj: CXX_COMPILER__black_scholes_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/black_scholes.cpp || cmake_object_order_depends_target_black_scholes
+  DEP_FILE = CMakeFiles\black_scholes.dir\examples\black_scholes.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = CMakeFiles\black_scholes.dir
+  OBJECT_FILE_DIR = CMakeFiles\black_scholes.dir\examples
+  TARGET_SUPPORT_DIR = CMakeFiles\black_scholes.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target black_scholes
+
+
+#############################################
+# Link the executable black_scholes.exe
+
+build black_scholes.exe: CXX_EXECUTABLE_LINKER__black_scholes_ CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\black_scholes.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = black_scholes.exe
+  TARGET_IMPLIB = libblack_scholes.dll.a
+  TARGET_PDB = black_scholes.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\black_scholes.dir
+
 
 #############################################
 # Utility command for test
@@ -815,6 +850,8 @@ build tests/rebuild_cache: phony tests/CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build black_scholes: phony black_scholes.exe
+
 build decay_euler: phony decay_euler.exe
 
 build decay_rk4: phony decay_rk4.exe
@@ -883,7 +920,7 @@ build test_scaled_decay_rk4.exe: phony tests/test_scaled_decay_rk4.exe
 #############################################
 # Folder: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build
 
-build all: phony decay_euler.exe decay_rk4.exe scaled_decay_rk4.exe harmonic_oscillator_rk4.exe harmonic_oscillator_adaptive_rk4.exe scaled_decay_adaptive_rk4.exe harmonic_oscillator_rkdp.exe harmonic_oscillator_adaptive_rkdp.exe gbm_euler_maruyama.exe gbm_milstein.exe tests/all
+build all: phony decay_euler.exe decay_rk4.exe scaled_decay_rk4.exe harmonic_oscillator_rk4.exe harmonic_oscillator_adaptive_rk4.exe scaled_decay_adaptive_rk4.exe harmonic_oscillator_rkdp.exe harmonic_oscillator_adaptive_rkdp.exe gbm_euler_maruyama.exe gbm_milstein.exe black_scholes.exe tests/all
 
 # =============================================================================
 

@@ -37,5 +37,8 @@ target_link_libraries(gbm_euler_maruyama PRIVATE odelib)
 add_executable(gbm_milstein examples/gbm_milstein.cpp)
 target_link_libraries(gbm_milstein PRIVATE odelib)
 
+add_executable(black_scholes examples/black_scholes.cpp)
+target_link_libraries(black_scholes PRIVATE odelib)
+
 enable_testing()
 add_subdirectory(tests)

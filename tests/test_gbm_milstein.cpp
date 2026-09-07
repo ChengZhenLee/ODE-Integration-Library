@@ -65,7 +65,7 @@ int main() {
         double W = 0;
 
         while (t < t1) {
-            double dW = distribution(engine);
+            double dW = distribution(engine); 
 
             // Feed each step function with the same generated dW
             yEM = stepperEM.step(gbm_drift, gbm_diffusion, yEM, t, h, dW);
