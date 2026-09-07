@@ -21,4 +21,8 @@ inline void printPassed(const std::string& name) {
     std::cout << "[PASSED] " << name << "\n";
 };
 
+inline void printAllPassed(const std::string& name) {
+    std::cout << "\nAll " << name << " checks passed.\n";
+}
+
 }

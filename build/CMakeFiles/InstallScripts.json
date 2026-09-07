@@ -2,7 +2,8 @@
 	"InstallScripts" : 
 	[
 		"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake",
-		"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake"
+		"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake",
+		"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

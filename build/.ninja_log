@@ -1,17 +1,17 @@
 # ninja log v7
-4	289	8104343813472990	build.ninja	ccd3d6f3f1b1daa9
-4	289	8104343813088809	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
-4	289	8104343813316663	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
-4	289	8104343813118588	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-4	289	8104343813316663	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-306	6165	8100824071829186	tests/CMakeFiles/test_euler.dir/test_euler.cpp.obj	3e310349e6c350b9
-19356	21170	8100824262636558	tests/test_euler.exe	857c6c01f2b394d9
+6	365	8104995301818825	build.ninja	ccd3d6f3f1b1daa9
+6	365	8104995301465679	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
+6	365	8104995301662853	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
+6	365	8104995301485650	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+6	365	8104995301662853	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+198	9175	8104908268757578	tests/CMakeFiles/test_euler.dir/test_euler.cpp.obj	3e310349e6c350b9
+9177	13544	8104908358541298	tests/test_euler.exe	857c6c01f2b394d9
 151	6129	8100824070266213	CMakeFiles/decay_euler.dir/examples/decay_euler.cpp.obj	7449eae8977cda1b
 8143	10147	8100824150181051	decay_euler.exe	8711c6902c510352
 220	6143	8100824070970833	CMakeFiles/decay_rk4.dir/examples/decay_rk4.cpp.obj	741bfc5dcb2f5f55
 10185	18606	8100824170506877	decay_rk4.exe	887b8292019dc1b5
-6111	7977	8100824129747518	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	229584e731fb65d8
-19445	21887	8100824263256406	tests/test_rk4.exe	706ae9fe5cbe971d
+218	9313	8104908268946533	tests/CMakeFiles/test_rk4.dir/test_rk4.cpp.obj	229584e731fb65d8
+9315	13671	8104908359932864	tests/test_rk4.exe	706ae9fe5cbe971d
 215	13223	8099674309113131	CMakeFiles/lambda_rk4.dir/examples/lambda_rk4.cpp.obj	ca219bb6c1790de7
 13229	14938	8099674439223011	lambda_rk4.exe	5096e5d93df4b0e2
 229	6108	8100824071053981	CMakeFiles/scaled_decay_rk4.dir/examples/scaled_decay_rk4.cpp.obj	b043b3d9fa885c04
@@ -21,66 +21,62 @@
 79	4680	8099722518527168	tests/CMakeFiles/test_euler.dir/test_utils.cpp.obj	9024e9d3166644ba
 240	4652	8099722521153872	tests/CMakeFiles/test_scaled_decay_rk4.dir/test_utils.cpp.obj	2570e8f6c54eaa02
 174	4678	8099722519612203	tests/CMakeFiles/test_rk4.dir/test_utils.cpp.obj	e4fdb75f17f2e907
-6130	8143	8100824130050662	tests/CMakeFiles/test_scaled_decay_rk4.dir/test_scaled_decay_rk4.cpp.obj	db22dc07ea6de178
-20055	22039	8100824269277217	tests/test_scaled_decay_rk4.exe	eaf5eea68a495d13
+238	9239	8104908269152802	tests/CMakeFiles/test_scaled_decay_rk4.dir/test_scaled_decay_rk4.cpp.obj	db22dc07ea6de178
+9242	13622	8104908359193628	tests/test_scaled_decay_rk4.exe	eaf5eea68a495d13
 182	11053	8099731215194595	tests/CMakeFiles/test_decay_rk4_vector.dir/test_decay_rk4_vector.cpp.obj	b063195e30a68ed4
 11053	11935	8099731323914942	tests/test_decay_rk4_vector.exe	91952aee66dca1f5
 238	19151	8100824071150973	CMakeFiles/harmonic_oscillator_rk4.dir/examples/harmonic_oscillator_rk4.cpp.obj	dab6d217ab2ae890
 19167	21347	8100824260419913	harmonic_oscillator_rk4.exe	595198cc097fdba3
-6144	19330	8100824130204057	tests/CMakeFiles/test_harmonic_oscillator_rk4.dir/test_harmonic_oscillator_rk4.cpp.obj	68c5d43a7106b593
-20136	22397	8100824270112849	tests/test_harmonic_oscillator_rk4.exe	4b1b777066535c29
+248	25440	8104908269253087	tests/CMakeFiles/test_harmonic_oscillator_rk4.dir/test_harmonic_oscillator_rk4.cpp.obj	68c5d43a7106b593
+25442	27500	8104908521194069	tests/test_harmonic_oscillator_rk4.exe	4b1b777066535c29
 247	19222	8100824071195912	CMakeFiles/harmonic_oscillator_adaptive_rk4.dir/examples/harmonic_oscillator_adaptive_rk4.cpp.obj	c7416811f54a33fb
 19255	21673	8100824261253416	harmonic_oscillator_adaptive_rk4.exe	98a81645f7f52230
 257	6185	8100824071372039	CMakeFiles/scaled_decay_adaptive_rk4.dir/examples/scaled_decay_adaptive_rk4.cpp.obj	d0ac2a92e22d22f2
 18541	20748	8100824254432995	scaled_decay_adaptive_rk4.exe	b2ff231ddb99c1aa
 6153	8029	8100824130302808	tests/CMakeFiles/test_scaled_decay_adaptive_rk4.dir/test_scaled_decay_adaptive_rk4.cpp.obj	38b179705ed6583
 20758	22598	8100824276319751	tests/test_scaled_decay_adaptive_rk4.exe	388299ddf4b5a81b
-6166	19427	8100824130419493	tests/CMakeFiles/test_harmonic_oscillator_adaptive_rk4.dir/test_harmonic_oscillator_adaptive_rk4.cpp.obj	1030e1a7970dfb50
-21183	23212	8100824280914591	tests/test_harmonic_oscillator_adaptive_rk4.exe	a4c49608684b2222
+261	25985	8104908269385733	tests/CMakeFiles/test_harmonic_oscillator_adaptive_rk4.dir/test_harmonic_oscillator_adaptive_rk4.cpp.obj	1030e1a7970dfb50
+25986	27499	8104908526640579	tests/test_harmonic_oscillator_adaptive_rk4.exe	a4c49608684b2222
 273	19920	8100824071494898	CMakeFiles/harmonic_oscillator_rkdp.dir/examples/harmonic_oscillator_rkdp.cpp.obj	38e9775ff946f789
 19932	22053	8100824268043148	harmonic_oscillator_rkdp.exe	2b55483f5e2a4013
 282	20940	8100824071601516	CMakeFiles/harmonic_oscillator_adaptive_rkdp.dir/examples/harmonic_oscillator_adaptive_rkdp.cpp.obj	a09e99b74d005b8a
 20941	22883	8100824278079539	harmonic_oscillator_adaptive_rkdp.exe	14304cff89ac240d
-6186	20045	8100824130620080	tests/CMakeFiles/test_harmonic_oscillator_rkdp.dir/test_harmonic_oscillator_rkdp.cpp.obj	58cbbb30082a4385
-7982	20127	8100824148592261	tests/CMakeFiles/test_harmonic_oscillator_adaptive_rkdp.dir/test_harmonic_oscillator_adaptive_rkdp.cpp.obj	d0b3a2a47f4e8b8c
-21302	23205	8100824281819464	tests/test_harmonic_oscillator_rkdp.exe	cb47d367d4b5c937
-21357	23341	8100824282427670	tests/test_harmonic_oscillator_adaptive_rkdp.exe	a4fb51c82fd38552
+280	27456	8104908269574253	tests/CMakeFiles/test_harmonic_oscillator_rkdp.dir/test_harmonic_oscillator_rkdp.cpp.obj	58cbbb30082a4385
+296	28371	8104908269733963	tests/CMakeFiles/test_harmonic_oscillator_adaptive_rkdp.dir/test_harmonic_oscillator_adaptive_rkdp.cpp.obj	d0b3a2a47f4e8b8c
+27457	28869	8104908541352898	tests/test_harmonic_oscillator_rkdp.exe	cb47d367d4b5c937
+28372	29456	8104908550495014	tests/test_harmonic_oscillator_adaptive_rkdp.exe	a4fb51c82fd38552
 15	1549	8100856987072048	CMakeFiles/gbm_euler_maruyama.dir/examples/gbm_euler_maruyama.cpp.obj	9b52bb337d4045fe
 94	894	8100860838054287	gbm_euler_maruyama.exe	9d1793fc6a9d3620
 20	1581	8100667139138333	tests/CMakeFiles/test_euler_maruyama.dir/test_euler_maruyama.cpp.obj	c315dadfb7faf279
 1583	2023	8100667154765144	tests/test_euler_maruyama.exe	6903be8e8bac4349
-33	1591	8100856987240384	tests/CMakeFiles/test_gbm_euler_maruyama.dir/test_gbm_euler_maruyama.cpp.obj	ddbf45fed6ff676a
-125	893	8100860838418019	tests/test_gbm_euler_maruyama.exe	f1086ef230d80d63
+307	9074	8104908269841498	tests/CMakeFiles/test_gbm_euler_maruyama.dir/test_gbm_euler_maruyama.cpp.obj	ddbf45fed6ff676a
+13545	15576	8104908402225471	tests/test_gbm_euler_maruyama.exe	f1086ef230d80d63
 24	1541	8100856987162087	CMakeFiles/gbm_milstein.dir/examples/gbm_milstein.cpp.obj	39b6ec1ee7972dc7
 107	890	8100860838287902	gbm_milstein.exe	8514e7c608d49173
-53	2403	8100860837720839	tests/CMakeFiles/test_gbm_milstein.dir/test_gbm_milstein.cpp.obj	e9f7a5cd7cb35a6a
-2405	2881	8100860861264998	tests/test_gbm_milstein.exe	afa39d5e00746745
-84	883	8104343813472990	build.ninja	ccd3d6f3f1b1daa9
-84	883	8104343813472990	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
-84	883	8104343813472990	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
-84	883	8104343813472990	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-84	883	8104343813472990	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-30	2751	8104344097842570	tests/CMakeFiles/test_gbm_milstein.dir/test_gbm_milstein.cpp.obj	e9f7a5cd7cb35a6a
-46	1303	8104344276485075	tests/test_gbm_milstein.exe	afa39d5e00746745
-35	2621	8104344276365429	CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj	ae70a1c7a6cf9fe0
-2625	3388	8104344302270288	black_scholes.exe	46429967c0b74348
-35	1858	8104344479821979	CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj	ae70a1c7a6cf9fe0
-1859	2459	8104344498068899	black_scholes.exe	46429967c0b74348
-14	1104	8104345335536888	CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj	ae70a1c7a6cf9fe0
-1106	1594	8104345346436440	black_scholes.exe	46429967c0b74348
-16	1484	8104345867174077	CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj	ae70a1c7a6cf9fe0
-1487	2277	8104345881868047	black_scholes.exe	46429967c0b74348
-22	2302	8104364705103849	CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj	ae70a1c7a6cf9fe0
-2304	2922	8104364727929151	black_scholes.exe	46429967c0b74348
-45	1365	8104364835989831	CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj	ae70a1c7a6cf9fe0
-1367	1785	8104364849240068	black_scholes.exe	46429967c0b74348
-12	1244	8104365032866001	CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj	ae70a1c7a6cf9fe0
-1245	1663	8104365045190872	black_scholes.exe	46429967c0b74348
-15	1400	8104365867062702	CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj	ae70a1c7a6cf9fe0
-1402	1813	8104365880923486	black_scholes.exe	46429967c0b74348
-13	1103	8104368987412085	CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj	ae70a1c7a6cf9fe0
-1105	1530	8104368998334961	black_scholes.exe	46429967c0b74348
-44	2510	8104827989813220	CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj	ae70a1c7a6cf9fe0
-2513	3217	8104828014432452	black_scholes.exe	46429967c0b74348
-16	981	8104831915382439	CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj	ae70a1c7a6cf9fe0
-983	1390	8104831925030346	black_scholes.exe	46429967c0b74348
+9082	14466	8104908357595584	tests/CMakeFiles/test_gbm_milstein.dir/test_gbm_milstein.cpp.obj	e9f7a5cd7cb35a6a
+14467	15954	8104908411444702	tests/test_gbm_milstein.exe	afa39d5e00746745
+89	9115	8104908267667405	CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj	ae70a1c7a6cf9fe0
+9117	13738	8104908357948721	black_scholes.exe	46429967c0b74348
+179	12410	8104908268562674	CMakeFiles/black_scholes_multithread.dir/examples/black_scholes_multithread.cpp.obj	25638d90a7c2bd70
+12411	14396	8104908390889592	black_scholes_multithread.exe	de308da08bab93a0
+33	2432	8104985035235719	benchmarks/CMakeFiles/adaptive_step_trace.dir/adaptive_step_trace.cpp.obj	72bc5c344ef52f31
+2435	2937	8104985059299773	benchmarks/adaptive_step_trace.exe	395f0704a0d89e08
+25	3902	8104984625257285	benchmarks/CMakeFiles/fixed_step_convergence.dir/fixed_step_convergence.cpp.obj	7dfdf35c03750f2c
+3903	4267	8104984664033720	benchmarks/fixed_step_convergence.exe	37f66ae0d3a982ec
+6	365	8104995301662853	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/cmake_install.cmake	ccd3d6f3f1b1daa9
+6	365	8104995301818825	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+24	615	8104995301818825	build.ninja	ccd3d6f3f1b1daa9
+24	615	8104995301818825	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
+24	615	8104995301818825	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
+24	615	8104995301818825	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/cmake_install.cmake	ccd3d6f3f1b1daa9
+24	615	8104995301818825	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+24	615	8104995301818825	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+24	615	8104995301818825	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+93	7073	8104995303478610	benchmarks/CMakeFiles/fixed_step_convergence.dir/fixed_step_convergence.cpp.obj	7dfdf35c03750f2c
+104	7107	8104995303587784	benchmarks/CMakeFiles/adaptive_step_tolerance.dir/adaptive_step_tolerance.cpp.obj	d3f7ba40d77c2a5a
+7075	8221	8104995373190957	benchmarks/fixed_step_convergence.exe	37f66ae0d3a982ec
+7109	8222	8104995373588348	benchmarks/adaptive_step_tolerance.exe	5909e05f42ed25fa
+27	6532	8104995676392798	benchmarks/CMakeFiles/adaptive_step_tolerance.dir/adaptive_step_tolerance.cpp.obj	d3f7ba40d77c2a5a
+6535	8067	8104995741508729	benchmarks/adaptive_step_tolerance.exe	5909e05f42ed25fa
+22	3226	8104996845345884	benchmarks/CMakeFiles/adaptive_step_tolerance.dir/adaptive_step_tolerance.cpp.obj	d3f7ba40d77c2a5a
+3227	3676	8104996877332182	benchmarks/adaptive_step_tolerance.exe	5909e05f42ed25fa

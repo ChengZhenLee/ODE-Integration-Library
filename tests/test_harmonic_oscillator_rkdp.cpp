@@ -32,7 +32,7 @@ int main() {
     assert(error1(0) < 0.01 && error1(1) < 0.01 && "RKDP solution too far from exact harmonic oscillator solution");
     TestUtils::printPassed("Accuracy Test");
 
-    std::cout << "\nAll test_harmonic_oscillator_rkdp checks passed.\n";
+    TestUtils::printAllPassed("test_harmonic_oscillator_rkdp");
 
     return 0;
 }

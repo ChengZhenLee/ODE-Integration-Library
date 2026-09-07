@@ -54,6 +54,6 @@ int main() {
     assert(error1 < error3 / 100 && "RK4 error should be dramatically smaller than Euler's error");
     TestUtils::printPassed("Euler Comparison Test");
 
-    std::cout << "\nAll test_rk4 checks passed.\n";
+    TestUtils::printAllPassed("test_rk4");
     return 0;
 }

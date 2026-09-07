@@ -34,7 +34,7 @@ int main() {
     assert(std::abs(result.times.back() - t1) < 1e-9 && "Adaptive RKDP did not integrate to t1");
     TestUtils::printPassed("Accuracy Test");
 
-    std::cout << "\nAll test_harmonic_oscillator_adaptive_rkdp checks passed.\n";
+    TestUtils::printAllPassed("test_harmonic_oscillator_adaptive_rkdp");
 
     return 0;
 }

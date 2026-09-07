@@ -7,38 +7,24 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(odelib INTERFACE)
 target_include_directories(odelib INTERFACE include)
 
-add_executable(decay_euler examples/decay_euler.cpp)
-target_link_libraries(decay_euler PRIVATE odelib)
+function (add_ode_example name)
+    add_executable(${name} examples/${name}.cpp)
+    target_link_libraries(${name} PRIVATE odelib)
+endfunction()
 
-add_executable(decay_rk4 examples/decay_rk4.cpp)
-target_link_libraries(decay_rk4 PRIVATE odelib)
-
-add_executable(scaled_decay_rk4 examples/scaled_decay_rk4.cpp)
-target_link_libraries(scaled_decay_rk4 PRIVATE odelib)
-
-add_executable(harmonic_oscillator_rk4 examples/harmonic_oscillator_rk4.cpp)
-target_link_libraries(harmonic_oscillator_rk4 PRIVATE odelib)
-
-add_executable(harmonic_oscillator_adaptive_rk4 examples/harmonic_oscillator_adaptive_rk4.cpp)
-target_link_libraries(harmonic_oscillator_adaptive_rk4 PRIVATE odelib)
-
-add_executable(scaled_decay_adaptive_rk4 examples/scaled_decay_adaptive_rk4.cpp)
-target_link_libraries(scaled_decay_adaptive_rk4 PRIVATE odelib)
-
-add_executable(harmonic_oscillator_rkdp examples/harmonic_oscillator_rkdp.cpp)
-target_link_libraries(harmonic_oscillator_rkdp PRIVATE odelib)
-
-add_executable(harmonic_oscillator_adaptive_rkdp examples/harmonic_oscillator_adaptive_rkdp.cpp)
-target_link_libraries(harmonic_oscillator_adaptive_rkdp PRIVATE odelib)
-
-add_executable(gbm_euler_maruyama examples/gbm_euler_maruyama.cpp)
-target_link_libraries(gbm_euler_maruyama PRIVATE odelib)
-
-add_executable(gbm_milstein examples/gbm_milstein.cpp)
-target_link_libraries(gbm_milstein PRIVATE odelib)
-
-add_executable(black_scholes examples/black_scholes.cpp)
-target_link_libraries(black_scholes PRIVATE odelib)
+add_ode_example(decay_euler)
+add_ode_example(decay_rk4)
+add_ode_example(scaled_decay_rk4)
+add_ode_example(scaled_decay_adaptive_rk4)
+add_ode_example(harmonic_oscillator_rk4)
+add_ode_example(harmonic_oscillator_adaptive_rk4)
+add_ode_example(harmonic_oscillator_rkdp)
+add_ode_example(harmonic_oscillator_adaptive_rkdp)
+add_ode_example(gbm_euler_maruyama)
+add_ode_example(gbm_milstein)
+add_ode_example(black_scholes)
+add_ode_example(black_scholes_multithread)
 
 enable_testing()
 add_subdirectory(tests)
+add_subdirectory(benchmarks)

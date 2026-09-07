@@ -1,6 +1,8 @@
 #include <cmath>
 #include <iomanip>
 #include <iostream>
+#include <thread>
+#include <future>
 
 
 #include "odelib/integrate.hpp"
@@ -32,15 +34,39 @@ int main(void) {
     auto diffusion = [sigma](double t, double S) { return sigma * S; };
     auto diffusion_derivative = [sigma](double t, double S) { return sigma; };
 
+    auto processChunk = [&](int start, int end) -> std::pair<double, double> {
+        double localSum = 0;
+        double localSumSqr = 0;
+        for (int i = start; i < end; i++) {
+            odelib::MilsteinStepper<double, double> stepper(i);
+            double S_T = odelib::integrate(stepper, drift, diffusion, diffusion_derivative, S0, 0.0, T, h).back();
+            double payoff = std::max(S_T - K, 0.0);
+            localSum += payoff;
+            localSumSqr += payoff * payoff;
+        }
+        return {localSum, localSumSqr};
+    };
+
+    std::vector<std::future<std::pair<double, double>>> futures;
+    int numThreads = std::thread::hardware_concurrency();
+    int chunkSize = N / numThreads;
+    
+    for (int i = 0; i < numThreads; i++) {
+        int start = i * chunkSize;
+        int end = (i == numThreads - 1) ? N : start + chunkSize; // Last thread takes all remainder
+
+        // Use std::launch::async to force each task onto its own thread immediately (not deffered)
+        // also relies on having enough CPU cores available
+        futures.push_back(std::async(std::launch::async, processChunk, start, end));
+    }
+
     double sum = 0;
     double sumSqr = 0;
 
-    for (int i = 0; i < N; i++) {
-        odelib::MilsteinStepper<double, double> stepper(i);
-        double S_T = odelib::integrate(stepper, drift, diffusion, diffusion_derivative, S0, 0.0, T, h).back();
-        double payoff = std::max(S_T - K, 0.0);
-        sum += payoff;
-        sumSqr += payoff * payoff;
+    for (auto& result : futures) {
+        auto [localSum, localSumSqr] = result.get();
+        sum += localSum;
+        sumSqr += localSumSqr;
     }
 
     double price = std::exp(-r*T) * (sum / N);

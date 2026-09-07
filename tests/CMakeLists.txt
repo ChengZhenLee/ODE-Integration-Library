@@ -1,40 +1,15 @@
-add_executable(test_euler test_euler.cpp)
-target_link_libraries(test_euler PRIVATE odelib)
+function(add_ode_test name)
+    add_executable(${name} ${name}.cpp)
+    target_link_libraries(${name} PRIVATE odelib)
+    add_test(NAME ${name} COMMAND ${name})
+endfunction()
 
-add_executable(test_rk4 test_rk4.cpp)
-target_link_libraries(test_rk4 PRIVATE odelib)
-
-add_executable(test_scaled_decay_rk4 test_scaled_decay_rk4.cpp)
-target_link_libraries(test_scaled_decay_rk4 PRIVATE odelib)
-
-add_executable(test_harmonic_oscillator_rk4 test_harmonic_oscillator_rk4.cpp)
-target_link_libraries(test_harmonic_oscillator_rk4 PRIVATE odelib)
-
-add_executable(test_scaled_decay_adaptive_rk4 test_scaled_decay_adaptive_rk4.cpp)
-target_link_libraries(test_scaled_decay_adaptive_rk4 PRIVATE odelib)
-
-add_executable(test_harmonic_oscillator_adaptive_rk4 test_harmonic_oscillator_adaptive_rk4.cpp)
-target_link_libraries(test_harmonic_oscillator_adaptive_rk4 PRIVATE odelib)
-
-add_executable(test_harmonic_oscillator_rkdp test_harmonic_oscillator_rkdp.cpp)
-target_link_libraries(test_harmonic_oscillator_rkdp PRIVATE odelib)
-
-add_executable(test_harmonic_oscillator_adaptive_rkdp test_harmonic_oscillator_adaptive_rkdp.cpp)
-target_link_libraries(test_harmonic_oscillator_adaptive_rkdp PRIVATE odelib)
-
-add_executable(test_gbm_euler_maruyama test_gbm_euler_maruyama.cpp)
-target_link_libraries(test_gbm_euler_maruyama PRIVATE odelib)
-
-add_executable(test_gbm_milstein test_gbm_milstein.cpp)
-target_link_libraries(test_gbm_milstein PRIVATE odelib)
-
-add_test(NAME test_euler COMMAND test_euler)
-add_test(NAME test_rk4 COMMAND test_rk4)
-add_test(NAME test_scaled_decay_rk4 COMMAND test_scaled_decay_rk4)
-add_test(NAME test_harmonic_oscillator_rk4 COMMAND test_harmonic_oscillator_rk4)
-add_test(NAME test_scaled_decay_adaptive_rk4 COMMAND test_scaled_decay_adaptive_rk4)
-add_test(NAME test_harmonic_oscillator_adaptive_rk4 COMMAND test_harmonic_oscillator_adaptive_rk4)
-add_test(NAME test_harmonic_oscillator_rkdp COMMAND test_harmonic_oscillator_rkdp)
-add_test(NAME test_harmonic_oscillator_adaptive_rkdp COMMAND test_harmonic_oscillator_adaptive_rkdp)
-add_test(NAME test_gbm_euler_maruyama COMMAND test_gbm_euler_maruyama)
-add_test(NAME test_gbm_milstein COMMAND test_gbm_milstein)
+add_ode_test(test_euler)
+add_ode_test(test_rk4)
+add_ode_test(test_scaled_decay_rk4)
+add_ode_test(test_harmonic_oscillator_rk4)
+add_ode_test(test_harmonic_oscillator_adaptive_rk4)
+add_ode_test(test_harmonic_oscillator_rkdp)
+add_ode_test(test_harmonic_oscillator_adaptive_rkdp)
+add_ode_test(test_gbm_euler_maruyama)
+add_ode_test(test_gbm_milstein)

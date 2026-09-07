@@ -1,0 +1,15 @@
+method,total_steps,error,time_seconds,tolerance
+AdaptiveRK4,96,6.95258e-310,2.7e-05,0.01
+AdaptiveRK4,99,6.95258e-310,2e-05,0.001
+AdaptiveRK4,104,6.95258e-310,2.1e-05,0.0001
+AdaptiveRK4,112,6.95258e-310,1.7e-05,1e-05
+AdaptiveRK4,127,6.95258e-310,2e-05,1e-06
+AdaptiveRK4,149,6.95258e-310,2.9e-05,1e-07
+AdaptiveRK4,184,6.95258e-310,3.4e-05,1e-08
+AdaptiveRKDP,96,6.95258e-310,2.7e-05,0.01
+AdaptiveRKDP,99,6.95258e-310,2e-05,0.001
+AdaptiveRKDP,104,6.95258e-310,2.1e-05,0.0001
+AdaptiveRKDP,112,6.95258e-310,1.7e-05,1e-05
+AdaptiveRKDP,127,6.95258e-310,2e-05,1e-06
+AdaptiveRKDP,149,6.95258e-310,2.9e-05,1e-07
+AdaptiveRKDP,184,6.95258e-310,3.4e-05,1e-08

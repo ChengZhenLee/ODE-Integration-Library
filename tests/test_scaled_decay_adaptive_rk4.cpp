@@ -34,7 +34,7 @@ int main() {
     assert(std::abs(result.times.back() - t1) < 1e-9 && "Adaptive RK4 did not integrate to t1");
     TestUtils::printPassed("Accuracy Test");
 
-    std::cout << "\nAll test_scaled_decay_adaptive_rk4 checks passed.\n";
+    TestUtils::printAllPassed("test_scaled_decay_adaptive_rk4");
 
     return 0;
 }

@@ -65,6 +65,6 @@ int main() {
     assert(maxError < 0.01 && "The non-probabilistic Euler-Maruyama solution is too far away from the exact solution");
     TestUtils::printPassed("Deterministic Path Test");
 
-    std::cout << "\nAll test_gbm_euler_maruyama checks passed.\n";
+    TestUtils::printAllPassed("test_gbm_euler_maruyama");
     return 0;
 }

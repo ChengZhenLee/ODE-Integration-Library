@@ -91,6 +91,6 @@ int main() {
     assert(totalEMError > totalMError && "The error of strong convergence for the Milstein scheme should be smaller than Euler-Maruyama");
     TestUtils::printPassed("Strong Convergence Test");
 
-    std::cout << "\nAll test_gbm_milstein checks passed.\n";
+    TestUtils::printAllPassed("test_gbm_milstein");
     return 0;
 }

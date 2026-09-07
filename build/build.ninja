@@ -141,6 +141,41 @@ build scaled_decay_rk4.exe: CXX_EXECUTABLE_LINKER__scaled_decay_rk4_ CMakeFiles/
   TARGET_SUPPORT_DIR = CMakeFiles\scaled_decay_rk4.dir
 
 # =============================================================================
+# Object build statements for EXECUTABLE target scaled_decay_adaptive_rk4
+
+
+#############################################
+# Order-only phony target for scaled_decay_adaptive_rk4
+
+build cmake_object_order_depends_target_scaled_decay_adaptive_rk4: phony || .
+
+build CMakeFiles/scaled_decay_adaptive_rk4.dir/examples/scaled_decay_adaptive_rk4.cpp.obj: CXX_COMPILER__scaled_decay_adaptive_rk4_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/scaled_decay_adaptive_rk4.cpp || cmake_object_order_depends_target_scaled_decay_adaptive_rk4
+  DEP_FILE = CMakeFiles\scaled_decay_adaptive_rk4.dir\examples\scaled_decay_adaptive_rk4.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir
+  OBJECT_FILE_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir\examples
+  TARGET_SUPPORT_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target scaled_decay_adaptive_rk4
+
+
+#############################################
+# Link the executable scaled_decay_adaptive_rk4.exe
+
+build scaled_decay_adaptive_rk4.exe: CXX_EXECUTABLE_LINKER__scaled_decay_adaptive_rk4_ CMakeFiles/scaled_decay_adaptive_rk4.dir/examples/scaled_decay_adaptive_rk4.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = scaled_decay_adaptive_rk4.exe
+  TARGET_IMPLIB = libscaled_decay_adaptive_rk4.dll.a
+  TARGET_PDB = scaled_decay_adaptive_rk4.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir
+
+# =============================================================================
 # Object build statements for EXECUTABLE target harmonic_oscillator_rk4
 
 
@@ -209,41 +244,6 @@ build harmonic_oscillator_adaptive_rk4.exe: CXX_EXECUTABLE_LINKER__harmonic_osci
   TARGET_IMPLIB = libharmonic_oscillator_adaptive_rk4.dll.a
   TARGET_PDB = harmonic_oscillator_adaptive_rk4.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\harmonic_oscillator_adaptive_rk4.dir
-
-# =============================================================================
-# Object build statements for EXECUTABLE target scaled_decay_adaptive_rk4
-
-
-#############################################
-# Order-only phony target for scaled_decay_adaptive_rk4
-
-build cmake_object_order_depends_target_scaled_decay_adaptive_rk4: phony || .
-
-build CMakeFiles/scaled_decay_adaptive_rk4.dir/examples/scaled_decay_adaptive_rk4.cpp.obj: CXX_COMPILER__scaled_decay_adaptive_rk4_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/scaled_decay_adaptive_rk4.cpp || cmake_object_order_depends_target_scaled_decay_adaptive_rk4
-  DEP_FILE = CMakeFiles\scaled_decay_adaptive_rk4.dir\examples\scaled_decay_adaptive_rk4.cpp.obj.d
-  FLAGS = -std=gnu++20
-  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
-  OBJECT_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir
-  OBJECT_FILE_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir\examples
-  TARGET_SUPPORT_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target scaled_decay_adaptive_rk4
-
-
-#############################################
-# Link the executable scaled_decay_adaptive_rk4.exe
-
-build scaled_decay_adaptive_rk4.exe: CXX_EXECUTABLE_LINKER__scaled_decay_adaptive_rk4_ CMakeFiles/scaled_decay_adaptive_rk4.dir/examples/scaled_decay_adaptive_rk4.cpp.obj
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = scaled_decay_adaptive_rk4.exe
-  TARGET_IMPLIB = libscaled_decay_adaptive_rk4.dll.a
-  TARGET_PDB = scaled_decay_adaptive_rk4.exe.dbg
-  TARGET_SUPPORT_DIR = CMakeFiles\scaled_decay_adaptive_rk4.dir
 
 # =============================================================================
 # Object build statements for EXECUTABLE target harmonic_oscillator_rkdp
@@ -419,6 +419,41 @@ build black_scholes.exe: CXX_EXECUTABLE_LINKER__black_scholes_ CMakeFiles/black_
   TARGET_IMPLIB = libblack_scholes.dll.a
   TARGET_PDB = black_scholes.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\black_scholes.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target black_scholes_multithread
+
+
+#############################################
+# Order-only phony target for black_scholes_multithread
+
+build cmake_object_order_depends_target_black_scholes_multithread: phony || .
+
+build CMakeFiles/black_scholes_multithread.dir/examples/black_scholes_multithread.cpp.obj: CXX_COMPILER__black_scholes_multithread_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/black_scholes_multithread.cpp || cmake_object_order_depends_target_black_scholes_multithread
+  DEP_FILE = CMakeFiles\black_scholes_multithread.dir\examples\black_scholes_multithread.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = CMakeFiles\black_scholes_multithread.dir
+  OBJECT_FILE_DIR = CMakeFiles\black_scholes_multithread.dir\examples
+  TARGET_SUPPORT_DIR = CMakeFiles\black_scholes_multithread.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target black_scholes_multithread
+
+
+#############################################
+# Link the executable black_scholes_multithread.exe
+
+build black_scholes_multithread.exe: CXX_EXECUTABLE_LINKER__black_scholes_multithread_ CMakeFiles/black_scholes_multithread.dir/examples/black_scholes_multithread.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\black_scholes_multithread.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = black_scholes_multithread.exe
+  TARGET_IMPLIB = libblack_scholes_multithread.dll.a
+  TARGET_PDB = black_scholes_multithread.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\black_scholes_multithread.dir
 
 
 #############################################
@@ -600,41 +635,6 @@ build tests/test_harmonic_oscillator_rk4.exe: CXX_EXECUTABLE_LINKER__test_harmon
   TARGET_IMPLIB = tests\libtest_harmonic_oscillator_rk4.dll.a
   TARGET_PDB = test_harmonic_oscillator_rk4.exe.dbg
   TARGET_SUPPORT_DIR = tests\CMakeFiles\test_harmonic_oscillator_rk4.dir
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_scaled_decay_adaptive_rk4
-
-
-#############################################
-# Order-only phony target for test_scaled_decay_adaptive_rk4
-
-build cmake_object_order_depends_target_test_scaled_decay_adaptive_rk4: phony || .
-
-build tests/CMakeFiles/test_scaled_decay_adaptive_rk4.dir/test_scaled_decay_adaptive_rk4.cpp.obj: CXX_COMPILER__test_scaled_decay_adaptive_rk4_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/test_scaled_decay_adaptive_rk4.cpp || cmake_object_order_depends_target_test_scaled_decay_adaptive_rk4
-  DEP_FILE = tests\CMakeFiles\test_scaled_decay_adaptive_rk4.dir\test_scaled_decay_adaptive_rk4.cpp.obj.d
-  FLAGS = -std=gnu++20
-  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
-  OBJECT_DIR = tests\CMakeFiles\test_scaled_decay_adaptive_rk4.dir
-  OBJECT_FILE_DIR = tests\CMakeFiles\test_scaled_decay_adaptive_rk4.dir
-  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_scaled_decay_adaptive_rk4.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_scaled_decay_adaptive_rk4
-
-
-#############################################
-# Link the executable tests\test_scaled_decay_adaptive_rk4.exe
-
-build tests/test_scaled_decay_adaptive_rk4.exe: CXX_EXECUTABLE_LINKER__test_scaled_decay_adaptive_rk4_ tests/CMakeFiles/test_scaled_decay_adaptive_rk4.dir/test_scaled_decay_adaptive_rk4.cpp.obj
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = tests\CMakeFiles\test_scaled_decay_adaptive_rk4.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = tests\test_scaled_decay_adaptive_rk4.exe
-  TARGET_IMPLIB = tests\libtest_scaled_decay_adaptive_rk4.dll.a
-  TARGET_PDB = test_scaled_decay_adaptive_rk4.exe.dbg
-  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_scaled_decay_adaptive_rk4.dir
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_harmonic_oscillator_adaptive_rk4
@@ -848,13 +848,176 @@ build tests/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build tests/rebuild_cache: phony tests/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target fixed_step_convergence
+
+
+#############################################
+# Order-only phony target for fixed_step_convergence
+
+build cmake_object_order_depends_target_fixed_step_convergence: phony || .
+
+build benchmarks/CMakeFiles/fixed_step_convergence.dir/fixed_step_convergence.cpp.obj: CXX_COMPILER__fixed_step_convergence_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/benchmarks/fixed_step_convergence.cpp || cmake_object_order_depends_target_fixed_step_convergence
+  DEFINES = -DPROJECT_ROOT_DIR="\"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library\""
+  DEP_FILE = benchmarks\CMakeFiles\fixed_step_convergence.dir\fixed_step_convergence.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = benchmarks\CMakeFiles\fixed_step_convergence.dir
+  OBJECT_FILE_DIR = benchmarks\CMakeFiles\fixed_step_convergence.dir
+  TARGET_SUPPORT_DIR = benchmarks\CMakeFiles\fixed_step_convergence.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target fixed_step_convergence
+
+
+#############################################
+# Link the executable benchmarks\fixed_step_convergence.exe
+
+build benchmarks/fixed_step_convergence.exe: CXX_EXECUTABLE_LINKER__fixed_step_convergence_ benchmarks/CMakeFiles/fixed_step_convergence.dir/fixed_step_convergence.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = benchmarks\CMakeFiles\fixed_step_convergence.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = benchmarks\fixed_step_convergence.exe
+  TARGET_IMPLIB = benchmarks\libfixed_step_convergence.dll.a
+  TARGET_PDB = fixed_step_convergence.exe.dbg
+  TARGET_SUPPORT_DIR = benchmarks\CMakeFiles\fixed_step_convergence.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target adaptive_step_trace
+
+
+#############################################
+# Order-only phony target for adaptive_step_trace
+
+build cmake_object_order_depends_target_adaptive_step_trace: phony || .
+
+build benchmarks/CMakeFiles/adaptive_step_trace.dir/adaptive_step_trace.cpp.obj: CXX_COMPILER__adaptive_step_trace_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/benchmarks/adaptive_step_trace.cpp || cmake_object_order_depends_target_adaptive_step_trace
+  DEFINES = -DPROJECT_ROOT_DIR="\"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library\""
+  DEP_FILE = benchmarks\CMakeFiles\adaptive_step_trace.dir\adaptive_step_trace.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = benchmarks\CMakeFiles\adaptive_step_trace.dir
+  OBJECT_FILE_DIR = benchmarks\CMakeFiles\adaptive_step_trace.dir
+  TARGET_SUPPORT_DIR = benchmarks\CMakeFiles\adaptive_step_trace.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target adaptive_step_trace
+
+
+#############################################
+# Link the executable benchmarks\adaptive_step_trace.exe
+
+build benchmarks/adaptive_step_trace.exe: CXX_EXECUTABLE_LINKER__adaptive_step_trace_ benchmarks/CMakeFiles/adaptive_step_trace.dir/adaptive_step_trace.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = benchmarks\CMakeFiles\adaptive_step_trace.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = benchmarks\adaptive_step_trace.exe
+  TARGET_IMPLIB = benchmarks\libadaptive_step_trace.dll.a
+  TARGET_PDB = adaptive_step_trace.exe.dbg
+  TARGET_SUPPORT_DIR = benchmarks\CMakeFiles\adaptive_step_trace.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target adaptive_step_tolerance
+
+
+#############################################
+# Order-only phony target for adaptive_step_tolerance
+
+build cmake_object_order_depends_target_adaptive_step_tolerance: phony || .
+
+build benchmarks/CMakeFiles/adaptive_step_tolerance.dir/adaptive_step_tolerance.cpp.obj: CXX_COMPILER__adaptive_step_tolerance_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/benchmarks/adaptive_step_tolerance.cpp || cmake_object_order_depends_target_adaptive_step_tolerance
+  DEFINES = -DPROJECT_ROOT_DIR="\"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library\""
+  DEP_FILE = benchmarks\CMakeFiles\adaptive_step_tolerance.dir\adaptive_step_tolerance.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = benchmarks\CMakeFiles\adaptive_step_tolerance.dir
+  OBJECT_FILE_DIR = benchmarks\CMakeFiles\adaptive_step_tolerance.dir
+  TARGET_SUPPORT_DIR = benchmarks\CMakeFiles\adaptive_step_tolerance.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target adaptive_step_tolerance
+
+
+#############################################
+# Link the executable benchmarks\adaptive_step_tolerance.exe
+
+build benchmarks/adaptive_step_tolerance.exe: CXX_EXECUTABLE_LINKER__adaptive_step_tolerance_ benchmarks/CMakeFiles/adaptive_step_tolerance.dir/adaptive_step_tolerance.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = benchmarks\CMakeFiles\adaptive_step_tolerance.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = benchmarks\adaptive_step_tolerance.exe
+  TARGET_IMPLIB = benchmarks\libadaptive_step_tolerance.dll.a
+  TARGET_PDB = adaptive_step_tolerance.exe.dbg
+  TARGET_SUPPORT_DIR = benchmarks\CMakeFiles\adaptive_step_tolerance.dir
+
+
+#############################################
+# Utility command for test
+
+build benchmarks/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks" && C:\Users\zhens\Downloads\w64devkit\bin\ctest.exe "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build benchmarks/test: phony benchmarks/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build benchmarks/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks" && C:\Users\zhens\Downloads\w64devkit\bin\ccmake.exe -S"C:\Users\zhens\OneDrive\Desktop\ODE Integration Library" -B"C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build""
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build benchmarks/edit_cache: phony benchmarks/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build benchmarks/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks" && C:\Users\zhens\Downloads\w64devkit\bin\cmake.exe --regenerate-during-build -S"C:\Users\zhens\OneDrive\Desktop\ODE Integration Library" -B"C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build benchmarks/rebuild_cache: phony benchmarks/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
+build adaptive_step_tolerance: phony benchmarks/adaptive_step_tolerance.exe
+
+build adaptive_step_tolerance.exe: phony benchmarks/adaptive_step_tolerance.exe
+
+build adaptive_step_trace: phony benchmarks/adaptive_step_trace.exe
+
+build adaptive_step_trace.exe: phony benchmarks/adaptive_step_trace.exe
+
 build black_scholes: phony black_scholes.exe
+
+build black_scholes_multithread: phony black_scholes_multithread.exe
 
 build decay_euler: phony decay_euler.exe
 
 build decay_rk4: phony decay_rk4.exe
+
+build fixed_step_convergence: phony benchmarks/fixed_step_convergence.exe
+
+build fixed_step_convergence.exe: phony benchmarks/fixed_step_convergence.exe
 
 build gbm_euler_maruyama: phony gbm_euler_maruyama.exe
 
@@ -904,10 +1067,6 @@ build test_rk4: phony tests/test_rk4.exe
 
 build test_rk4.exe: phony tests/test_rk4.exe
 
-build test_scaled_decay_adaptive_rk4: phony tests/test_scaled_decay_adaptive_rk4.exe
-
-build test_scaled_decay_adaptive_rk4.exe: phony tests/test_scaled_decay_adaptive_rk4.exe
-
 build test_scaled_decay_rk4: phony tests/test_scaled_decay_rk4.exe
 
 build test_scaled_decay_rk4.exe: phony tests/test_scaled_decay_rk4.exe
@@ -920,14 +1079,21 @@ build test_scaled_decay_rk4.exe: phony tests/test_scaled_decay_rk4.exe
 #############################################
 # Folder: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build
 
-build all: phony decay_euler.exe decay_rk4.exe scaled_decay_rk4.exe harmonic_oscillator_rk4.exe harmonic_oscillator_adaptive_rk4.exe scaled_decay_adaptive_rk4.exe harmonic_oscillator_rkdp.exe harmonic_oscillator_adaptive_rkdp.exe gbm_euler_maruyama.exe gbm_milstein.exe black_scholes.exe tests/all
+build all: phony decay_euler.exe decay_rk4.exe scaled_decay_rk4.exe scaled_decay_adaptive_rk4.exe harmonic_oscillator_rk4.exe harmonic_oscillator_adaptive_rk4.exe harmonic_oscillator_rkdp.exe harmonic_oscillator_adaptive_rkdp.exe gbm_euler_maruyama.exe gbm_milstein.exe black_scholes.exe black_scholes_multithread.exe tests/all benchmarks/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks
+
+build benchmarks/all: phony benchmarks/fixed_step_convergence.exe benchmarks/adaptive_step_trace.exe benchmarks/adaptive_step_tolerance.exe
 
 # =============================================================================
 
 #############################################
 # Folder: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests
 
-build tests/all: phony tests/test_euler.exe tests/test_rk4.exe tests/test_scaled_decay_rk4.exe tests/test_harmonic_oscillator_rk4.exe tests/test_scaled_decay_adaptive_rk4.exe tests/test_harmonic_oscillator_adaptive_rk4.exe tests/test_harmonic_oscillator_rkdp.exe tests/test_harmonic_oscillator_adaptive_rkdp.exe tests/test_gbm_euler_maruyama.exe tests/test_gbm_milstein.exe
+build tests/all: phony tests/test_euler.exe tests/test_rk4.exe tests/test_scaled_decay_rk4.exe tests/test_harmonic_oscillator_rk4.exe tests/test_harmonic_oscillator_adaptive_rk4.exe tests/test_harmonic_oscillator_rkdp.exe tests/test_harmonic_oscillator_adaptive_rkdp.exe tests/test_gbm_euler_maruyama.exe tests/test_gbm_milstein.exe
 
 # =============================================================================
 # Built-in targets
@@ -936,14 +1102,14 @@ build tests/all: phony tests/test_euler.exe tests/test_rk4.exe tests/test_scaled
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/build/cmake_install.cmake C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/build/tests/cmake_install.cmake C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/build/CTestTestfile.cmake C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/build/tests/CTestTestfile.cmake: RERUN_CMAKE | C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeCXXInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeGenericSystem.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeInitializeConfigs.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeLanguageInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeRCInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Compiler/GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Compiler/GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Linker/GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Linker/GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Linker/GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-Initialize.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-windres.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/CMakeLists.txt C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/CMakeLists.txt CMakeCache.txt CMakeFiles/4.3.2/CMakeCXXCompiler.cmake CMakeFiles/4.3.2/CMakeRCCompiler.cmake CMakeFiles/4.3.2/CMakeSystem.cmake
+build build.ninja C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/build/cmake_install.cmake C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/build/tests/cmake_install.cmake C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/build/benchmarks/cmake_install.cmake C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/build/CTestTestfile.cmake C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/build/tests/CTestTestfile.cmake C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/build/benchmarks/CTestTestfile.cmake: RERUN_CMAKE | C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeCXXInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeGenericSystem.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeInitializeConfigs.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeLanguageInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeRCInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Compiler/GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Compiler/GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Linker/GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Linker/GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Linker/GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-Initialize.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-windres.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/CMakeLists.txt C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/benchmarks/CMakeLists.txt C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/CMakeLists.txt CMakeCache.txt CMakeFiles/4.3.2/CMakeCXXCompiler.cmake CMakeFiles/4.3.2/CMakeRCCompiler.cmake CMakeFiles/4.3.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeCXXInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeGenericSystem.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeInitializeConfigs.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeLanguageInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeRCInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Compiler/GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Compiler/GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Linker/GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Linker/GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Linker/GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-Initialize.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-windres.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/CMakeLists.txt C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/CMakeLists.txt CMakeCache.txt CMakeFiles/4.3.2/CMakeCXXCompiler.cmake CMakeFiles/4.3.2/CMakeRCCompiler.cmake CMakeFiles/4.3.2/CMakeSystem.cmake: phony
+build C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeCXXInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeGenericSystem.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeInitializeConfigs.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeLanguageInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeRCInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Compiler/GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Compiler/GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Linker/GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Linker/GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Linker/GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Linker/Windows-GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-GNU.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-Initialize.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows-windres.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/Windows.cmake C$:/Users/zhens/Downloads/w64devkit/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/CMakeLists.txt C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/benchmarks/CMakeLists.txt C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/CMakeLists.txt CMakeCache.txt CMakeFiles/4.3.2/CMakeCXXCompiler.cmake CMakeFiles/4.3.2/CMakeRCCompiler.cmake CMakeFiles/4.3.2/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -31,6 +31,6 @@ int main() {
     assert(error < 0.01 && "Euler solution too far from exact decay solution");
     TestUtils::printPassed("Accuracy Test");
 
-    std::cout << "\nAll test_euler checks passed.\n";
+    TestUtils::printAllPassed("test_euler");
     return 0;
 }

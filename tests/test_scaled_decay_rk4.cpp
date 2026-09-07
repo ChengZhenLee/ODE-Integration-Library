@@ -33,7 +33,7 @@ int main() {
     assert(error1 < 0.01 && "RK4 solution too far from exact decay solution");
     TestUtils::printPassed("Accuracy Test");
 
-    std::cout << "\nAll test_scaled_decay_rk4 checks passed.\n";
+    TestUtils::printAllPassed("test_scaled_decay_rk4");
 
     return 0;
 }
