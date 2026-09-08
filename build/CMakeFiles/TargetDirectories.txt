@@ -28,6 +28,10 @@ C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CMakeFiles/r
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CMakeFiles/fixed_step_convergence.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CMakeFiles/adaptive_step_trace.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CMakeFiles/adaptive_step_tolerance.dir
+C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CMakeFiles/strong_convergence.dir
+C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CMakeFiles/monte_carlo_n.dir
+C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CMakeFiles/thread_speedup.dir
+C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CMakeFiles/walk_comparison.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CMakeFiles/test.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CMakeFiles/edit_cache.dir
 C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CMakeFiles/rebuild_cache.dir

@@ -1,9 +1,9 @@
 # ninja log v7
-6	365	8104995301818825	build.ninja	ccd3d6f3f1b1daa9
-6	365	8104995301465679	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
-6	365	8104995301662853	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
-6	365	8104995301485650	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-6	365	8104995301662853	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+36	851	8105750711505187	build.ninja	ccd3d6f3f1b1daa9
+36	851	8105750710891964	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
+36	851	8105750711105023	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
+36	851	8105750710924099	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+36	851	8105750711105023	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
 198	9175	8104908268757578	tests/CMakeFiles/test_euler.dir/test_euler.cpp.obj	3e310349e6c350b9
 9177	13544	8104908358541298	tests/test_euler.exe	857c6c01f2b394d9
 151	6129	8100824070266213	CMakeFiles/decay_euler.dir/examples/decay_euler.cpp.obj	7449eae8977cda1b
@@ -51,32 +51,34 @@
 1583	2023	8100667154765144	tests/test_euler_maruyama.exe	6903be8e8bac4349
 307	9074	8104908269841498	tests/CMakeFiles/test_gbm_euler_maruyama.dir/test_gbm_euler_maruyama.cpp.obj	ddbf45fed6ff676a
 13545	15576	8104908402225471	tests/test_gbm_euler_maruyama.exe	f1086ef230d80d63
-24	1541	8100856987162087	CMakeFiles/gbm_milstein.dir/examples/gbm_milstein.cpp.obj	39b6ec1ee7972dc7
-107	890	8100860838287902	gbm_milstein.exe	8514e7c608d49173
-9082	14466	8104908357595584	tests/CMakeFiles/test_gbm_milstein.dir/test_gbm_milstein.cpp.obj	e9f7a5cd7cb35a6a
-14467	15954	8104908411444702	tests/test_gbm_milstein.exe	afa39d5e00746745
-89	9115	8104908267667405	CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj	ae70a1c7a6cf9fe0
-9117	13738	8104908357948721	black_scholes.exe	46429967c0b74348
-179	12410	8104908268562674	CMakeFiles/black_scholes_multithread.dir/examples/black_scholes_multithread.cpp.obj	25638d90a7c2bd70
-12411	14396	8104908390889592	black_scholes_multithread.exe	de308da08bab93a0
+32	3203	8105694681764865	CMakeFiles/gbm_milstein.dir/examples/gbm_milstein.cpp.obj	39b6ec1ee7972dc7
+3204	4083	8105694713550531	gbm_milstein.exe	8514e7c608d49173
+83	3179	8105694682301963	tests/CMakeFiles/test_gbm_milstein.dir/test_gbm_milstein.cpp.obj	e9f7a5cd7cb35a6a
+3183	4091	8105694713313242	tests/test_gbm_milstein.exe	afa39d5e00746745
+66	3153	8105694682146017	CMakeFiles/black_scholes.dir/examples/black_scholes.cpp.obj	ae70a1c7a6cf9fe0
+3155	4080	8105694713050834	black_scholes.exe	46429967c0b74348
+73	4185	8105694682163283	CMakeFiles/black_scholes_multithread.dir/examples/black_scholes_multithread.cpp.obj	25638d90a7c2bd70
+4186	4729	8105694723335555	black_scholes_multithread.exe	de308da08bab93a0
 33	2432	8104985035235719	benchmarks/CMakeFiles/adaptive_step_trace.dir/adaptive_step_trace.cpp.obj	72bc5c344ef52f31
 2435	2937	8104985059299773	benchmarks/adaptive_step_trace.exe	395f0704a0d89e08
-25	3902	8104984625257285	benchmarks/CMakeFiles/fixed_step_convergence.dir/fixed_step_convergence.cpp.obj	7dfdf35c03750f2c
-3903	4267	8104984664033720	benchmarks/fixed_step_convergence.exe	37f66ae0d3a982ec
-6	365	8104995301662853	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/cmake_install.cmake	ccd3d6f3f1b1daa9
-6	365	8104995301818825	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-24	615	8104995301818825	build.ninja	ccd3d6f3f1b1daa9
-24	615	8104995301818825	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
-24	615	8104995301818825	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
-24	615	8104995301818825	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/cmake_install.cmake	ccd3d6f3f1b1daa9
-24	615	8104995301818825	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-24	615	8104995301818825	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-24	615	8104995301818825	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CTestTestfile.cmake	ccd3d6f3f1b1daa9
 93	7073	8104995303478610	benchmarks/CMakeFiles/fixed_step_convergence.dir/fixed_step_convergence.cpp.obj	7dfdf35c03750f2c
-104	7107	8104995303587784	benchmarks/CMakeFiles/adaptive_step_tolerance.dir/adaptive_step_tolerance.cpp.obj	d3f7ba40d77c2a5a
 7075	8221	8104995373190957	benchmarks/fixed_step_convergence.exe	37f66ae0d3a982ec
-7109	8222	8104995373588348	benchmarks/adaptive_step_tolerance.exe	5909e05f42ed25fa
-27	6532	8104995676392798	benchmarks/CMakeFiles/adaptive_step_tolerance.dir/adaptive_step_tolerance.cpp.obj	d3f7ba40d77c2a5a
-6535	8067	8104995741508729	benchmarks/adaptive_step_tolerance.exe	5909e05f42ed25fa
+36	851	8105750711367771	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/cmake_install.cmake	ccd3d6f3f1b1daa9
+36	851	8105750711392982	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CTestTestfile.cmake	ccd3d6f3f1b1daa9
 22	3226	8104996845345884	benchmarks/CMakeFiles/adaptive_step_tolerance.dir/adaptive_step_tolerance.cpp.obj	d3f7ba40d77c2a5a
 3227	3676	8104996877332182	benchmarks/adaptive_step_tolerance.exe	5909e05f42ed25fa
+20	1906	8105714316337709	benchmarks/CMakeFiles/strong_convergence.dir/strong_convergence.cpp.obj	4ec77c1b228de9a
+1908	2328	8105714335235088	benchmarks/strong_convergence.exe	6e1e00ab99bd55fd
+17	2567	8105717644335206	benchmarks/CMakeFiles/monte_carlo_n.dir/monte_carlo_n.cpp.obj	ecb897c318a7b29f
+2569	3153	8105717669849871	benchmarks/monte_carlo_n.exe	c8ba82aff65821e7
+160	5795	8105738108624903	benchmarks/CMakeFiles/thread_speedup.dir/thread_speedup.cpp.obj	7a07b3bdd52f1aa1
+5797	6346	8105738164994939	benchmarks/thread_speedup.exe	502bd60cf56e403e
+13	558	8105750711505187	build.ninja	ccd3d6f3f1b1daa9
+13	558	8105750711505187	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
+13	558	8105750711505187	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
+13	558	8105750711505187	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/cmake_install.cmake	ccd3d6f3f1b1daa9
+13	558	8105750711505187	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+13	558	8105750711505187	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+13	558	8105750711505187	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+112	2858	8105750713093007	benchmarks/CMakeFiles/walk_comparison.dir/walk_comparison.cpp.obj	ebbe84cadd43294f
+2860	3410	8105750740591096	benchmarks/walk_comparison.exe	a70f17ccfa2f46f8

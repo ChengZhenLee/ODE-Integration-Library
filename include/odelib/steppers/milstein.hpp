@@ -12,6 +12,8 @@ struct MilsteinStepper {
         std::mt19937_64 engine;
 
     public:
+        MilsteinStepper() {}
+        
         MilsteinStepper(unsigned int seed) : engine(seed) {}
 
         template <typename Drift, typename Diffusion, typename DiffusionDerivative>

@@ -1,0 +1,7 @@
+method,N,error
+Milstein,1000,0.401112
+Milstein,5000,0.0814384
+Milstein,10000,0.0202996
+Milstein,50000,0.00895916
+Milstein,100000,0.0223496
+Milstein,500000,0.00679726

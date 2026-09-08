@@ -1,0 +1,13 @@
+method,h,error
+Euler-Maruyama,0.5,0.0605726
+Milstein,0.5,0.0330331
+Euler-Maruyama,0.1,0.0281994
+Milstein,0.1,0.00987642
+Euler-Maruyama,0.05,0.0192481
+Milstein,0.05,0.00494894
+Euler-Maruyama,0.01,0.00841007
+Milstein,0.01,0.000985634
+Euler-Maruyama,0.005,0.00597004
+Milstein,0.005,0.000491967
+Euler-Maruyama,0.001,0.00265251
+Milstein,0.001,6.85905e-05
