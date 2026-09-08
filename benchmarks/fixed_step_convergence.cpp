@@ -105,7 +105,7 @@ int main(void) {
     auto rk4Results = futureRK4.get();
     auto rkdpResults = futureRKDP.get();
 
-    std::string outputPath = std::string(PROJECT_ROOT_DIR) + "/benchmarks/plots/FixedStepConvergence.csv";
+    std::string outputPath = std::string(PROJECT_ROOT_DIR) + "/benchmarks/data/FixedStepConvergence.csv";
     std::ofstream plotFile(outputPath);
     if (!plotFile.is_open()) {
         std::cerr << "Failed to open output file!\n";

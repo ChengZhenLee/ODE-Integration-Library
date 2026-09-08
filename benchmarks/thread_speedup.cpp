@@ -86,7 +86,7 @@ int main(void) {
         points.push_back(BenchmarkPoint(numThreads, timeSeconds, error));
     }
 
-    std::string outputPath = std::string(PROJECT_ROOT_DIR) + "/benchmarks/plots/ThreadSpeedup.csv";
+    std::string outputPath = std::string(PROJECT_ROOT_DIR) + "/benchmarks/data/ThreadSpeedup.csv";
     std::ofstream plotFile(outputPath);
     if (!plotFile.is_open()) {
         std::cerr << "Failed to open output file!\n";

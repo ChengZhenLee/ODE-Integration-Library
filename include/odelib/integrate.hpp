@@ -18,14 +18,11 @@ auto integrate(const Stepper& stepper, System&& f, State y0, Time t0, Time t1, T
 
     if constexpr(std::is_same_v<StepReturnType, State>) {
         std::vector<State> res = {y0};
-        std::vector<Time> times = {t0};
-        std::vector<Time> hs = {h};
 
-        Time t = t0;
-
-        while (t < t1) {
+        long n = static_cast<long>(std::round((t1 - t0) / h));
+        for (long i = 0; i < n; ++i) {
+            Time t = t0 + static_cast<Time>(i) * h;
             res.push_back(stepper.step(f, res.back(), t, h));
-            t += h;
         }
 
         return res;
@@ -61,11 +58,10 @@ template <typename Stepper, typename Drift, typename Diffusion, typename State, 
 auto integrate(Stepper& stepper, Drift&& f, Diffusion&& g, State y0, Time t0, Time t1, Time h) {
     std::vector<State> res{y0};
 
-    Time t = t0;
-
-    while (t < t1) {
+    long n = static_cast<long>(std::round((t1 - t0) / h));
+    for (long i = 0; i < n; ++i) {
+        Time t = t0 + static_cast<Time>(i) * h;
         res.push_back(stepper.step(f, g, res.back(), t, h));
-        t += h;
     }
 
     return res;
@@ -76,11 +72,10 @@ template <typename Stepper, typename Drift, typename Diffusion, typename Diffusi
 auto integrate(Stepper& stepper, Drift&& f, Diffusion&& g, DiffusionDerivative&& gPrime, State y0, Time t0, Time t1, Time h) {
     std::vector<State> res{y0};
 
-    Time t = t0;
-
-    while (t < t1) {
+    long n = static_cast<long>(std::round((t1 - t0) / h));
+    for (long i = 0; i < n; ++i) {
+        Time t = t0 + static_cast<Time>(i) * h;
         res.push_back(stepper.step(f, g, gPrime, res.back(), t, h));
-        t += h;
     }
 
     return res;

@@ -31,7 +31,7 @@ int main(void) {
     auto adaptiveRK4Results = adaptiveRK4Future.get();
     auto adaptiveRKDPResults = adaptiveRKDPFuture.get();
 
-    std::string outputPath = std::string(PROJECT_ROOT_DIR) + "/benchmarks/plots/AdaptiveStepTrace.csv";
+    std::string outputPath = std::string(PROJECT_ROOT_DIR) + "/benchmarks/data/AdaptiveStepTrace.csv";
     std::ofstream plotFile(outputPath);
     if (!plotFile.is_open()) {
         std::cerr << "Failed to open output file!\n";

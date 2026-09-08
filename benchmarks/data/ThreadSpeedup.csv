@@ -1,5 +1,5 @@
 method,thread_count,time_seconds,error
-Milstein,1,3.49233,0.0223496
-Milstein,2,1.72044,0.0223496
-Milstein,4,1.93206,0.0223496
-Milstein,8,1.63292,0.0223496
+Milstein,1,4.16708,0.0223496
+Milstein,2,2.80179,0.0223496
+Milstein,4,1.79722,0.0223496
+Milstein,8,1.43755,0.0223496

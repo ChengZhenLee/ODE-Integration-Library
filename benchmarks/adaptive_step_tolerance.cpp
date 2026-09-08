@@ -23,7 +23,7 @@ struct BenchmarkPoint {
 auto steep_decay = [](double t, double y) { return -y * 50; };
 
 int main(void) {
-    const int repeats = 100;
+    const int repeats = 1000;
     const double y0 = 1.0;
     const double t0 = 0.0;
     const double t1 = 5.0;
@@ -39,21 +39,21 @@ int main(void) {
             double totalSteps;
             double result;
             double error;
-            double bestTime = std::numeric_limits<double>::max();
+            double duration;
             odelib::AdaptiveRK4Stepper<double, double> stepper(tolerance);
 
+            auto start = std::chrono::high_resolution_clock::now();
             for (int i = 0; i < repeats; i++) {
-                auto start = std::chrono::high_resolution_clock::now();
                 auto adaptiveIntegrationResult = odelib::integrate(stepper, steep_decay, y0, t0, t1, h);
-                auto end = std::chrono::high_resolution_clock::now();
 
                 result = adaptiveIntegrationResult.states.back();
                 totalSteps = adaptiveIntegrationResult.hs.size();
-                bestTime = std::min(bestTime, std::chrono::duration<double>(end - start).count());
             }
+            auto end = std::chrono::high_resolution_clock::now();
+            duration = std::chrono::duration<double>(end - start).count();
 
             error = std::abs(exact - result);
-            points.push_back(BenchmarkPoint(totalSteps, error, bestTime, tolerance));
+            points.push_back(BenchmarkPoint(totalSteps, error, duration, tolerance));
         }
 
         return points;
@@ -66,21 +66,21 @@ int main(void) {
             double totalSteps;
             double result;
             double error;
-            double bestTime = std::numeric_limits<double>::max();
+            double duration;
             odelib::AdaptiveRKDPStepper<double, double> stepper(tolerance);
 
+            auto start = std::chrono::high_resolution_clock::now();
             for (int i = 0; i < repeats; i++) {
-                auto start = std::chrono::high_resolution_clock::now();
                 auto adaptiveIntegrationResult = odelib::integrate(stepper, steep_decay, y0, t0, t1, h);
-                auto end = std::chrono::high_resolution_clock::now();
 
                 result = adaptiveIntegrationResult.states.back();
                 totalSteps = adaptiveIntegrationResult.hs.size();
-                bestTime = std::min(bestTime, std::chrono::duration<double>(end - start).count());
             }
+            auto end = std::chrono::high_resolution_clock::now();
+            duration = std::chrono::duration<double>(end - start).count(); 
 
             error = std::abs(exact - result);
-            points.push_back(BenchmarkPoint(totalSteps, error, bestTime, tolerance));
+            points.push_back(BenchmarkPoint(totalSteps, error, duration, tolerance));
         }
 
         return points;
@@ -92,7 +92,7 @@ int main(void) {
     auto adaptiveRK4Results = adaptiveRK4Future.get();
     auto adaptiveRKDPResults = adaptiveRKDPFuture.get();
 
-    std::string outputPath = std::string(PROJECT_ROOT_DIR) + "/benchmarks/plots/AdaptiveStepTolerance.csv";
+    std::string outputPath = std::string(PROJECT_ROOT_DIR) + "/benchmarks/data/AdaptiveStepTolerance.csv";
     std::ofstream plotFile(outputPath);
     if (!plotFile.is_open()) {
         std::cerr << "Failed to open output file!\n";
@@ -103,7 +103,7 @@ int main(void) {
     for (const auto& point : adaptiveRK4Results) {
         plotFile << "AdaptiveRK4," << point.totalSteps << "," << point.error << "," << point.timeSeconds << "," << point.tolerance << "\n";
     }
-    for (const auto& point : adaptiveRK4Results) {
+    for (const auto& point : adaptiveRKDPResults) {
         plotFile << "AdaptiveRKDP," << point.totalSteps << "," << point.error << "," << point.timeSeconds << "," << point.tolerance << "\n";
     }
 

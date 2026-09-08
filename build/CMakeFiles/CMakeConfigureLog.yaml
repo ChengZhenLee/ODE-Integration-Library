@@ -2500,3 +2500,81 @@ events:
       Running the CXX compiler's linker: "C:/Users/zhens/Downloads/w64devkit/bin/ld.exe" "-v"
       GNU ld (GNU Binutils) 2.46.0.20260210
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "benchmarks/CMakeLists.txt:16 (find_program)"
+    mode: "program"
+    variable: "PYTHON_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python.exe"
+      - "python3"
+      - "python"
+    candidate_directories:
+      - "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/.venv/Scripts/"
+      - "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/.venv/bin/"
+    searched_directories:
+      - "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/.venv/Scripts/python.exe.com"
+    found: "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/.venv/Scripts/python.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\zhens\\.cabal\\bin"
+        - "C:\\Users\\zhens\\bin"
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\local\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\zhens\\bin"
+        - "C:\\Users\\zhens\\Downloads\\w64devkit\\bin"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\ProgramData\\DockerDesktop\\version-bin"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn"
+        - "C:\\Program Files\\Azure Data Studio\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\nodejs"
+        - "C:\\Program Files\\gnuplot\\bin"
+        - "C:\\Gradle\\gradle-8.5\\bin"
+        - "C:\\Program Files\\Microchip\\xc8\\v2.36\\bin"
+        - "C:\\Users\\zhens\\.local\\bin"
+        - "C:\\Users\\zhens\\AppData\\Local\\Programs\\Python\\Python310\\Scripts"
+        - "C:\\Users\\zhens\\AppData\\Local\\Programs\\Python\\Python310"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files\\Azure Data Studio\\bin"
+        - "C:\\Users\\zhens\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\zhens\\Downloads\\sqlite"
+        - "C:\\ghcup\\bin"
+        - "C:\\Users\\zhens\\AppData\\Roaming\\npm"
+        - "C:\\Users\\zhens\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\zhens\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64"
+        - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
+        - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/odelib"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files/Git/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Users/zhens/Downloads/w64devkit"
+        - "C:/Program Files (x86)/odelib"
+...

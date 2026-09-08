@@ -1106,6 +1106,12 @@ build benchmarks/walk_comparison.exe: CXX_EXECUTABLE_LINKER__walk_comparison_ be
 
 
 #############################################
+# Utility command for run_benchmarks
+
+build benchmarks/run_benchmarks: phony benchmarks/CMakeFiles/run_benchmarks benchmarks/adaptive_step_tolerance.exe benchmarks/adaptive_step_trace.exe benchmarks/fixed_step_convergence.exe benchmarks/monte_carlo_n.exe benchmarks/strong_convergence.exe benchmarks/thread_speedup.exe benchmarks/walk_comparison.exe
+
+
+#############################################
 # Utility command for test
 
 build benchmarks/CMakeFiles/test.util: CUSTOM_COMMAND
@@ -1139,6 +1145,14 @@ build benchmarks/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build benchmarks/rebuild_cache: phony benchmarks/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Custom command for benchmarks\CMakeFiles\run_benchmarks
+
+build benchmarks/CMakeFiles/run_benchmarks | ${cmake_ninja_workdir}benchmarks/CMakeFiles/run_benchmarks: CUSTOM_COMMAND benchmarks/fixed_step_convergence.exe benchmarks/adaptive_step_trace.exe benchmarks/adaptive_step_tolerance.exe benchmarks/strong_convergence.exe benchmarks/monte_carlo_n.exe benchmarks/thread_speedup.exe benchmarks/walk_comparison.exe || benchmarks/adaptive_step_tolerance.exe benchmarks/adaptive_step_trace.exe benchmarks/fixed_step_convergence.exe benchmarks/monte_carlo_n.exe benchmarks/strong_convergence.exe benchmarks/thread_speedup.exe benchmarks/walk_comparison.exe
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\fixed_step_convergence.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\adaptive_step_trace.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\adaptive_step_tolerance.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\strong_convergence.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\monte_carlo_n.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\thread_speedup.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\walk_comparison.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\.venv\Scripts\python.exe" "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/benchmarks/plots/plot_all.py""
+  DESC = Running all benchmarks and regenerating plots
 
 # =============================================================================
 # Target aliases.
@@ -1178,6 +1192,8 @@ build harmonic_oscillator_rkdp: phony harmonic_oscillator_rkdp.exe
 build monte_carlo_n: phony benchmarks/monte_carlo_n.exe
 
 build monte_carlo_n.exe: phony benchmarks/monte_carlo_n.exe
+
+build run_benchmarks: phony benchmarks/run_benchmarks
 
 build scaled_decay_adaptive_rk4: phony scaled_decay_adaptive_rk4.exe
 

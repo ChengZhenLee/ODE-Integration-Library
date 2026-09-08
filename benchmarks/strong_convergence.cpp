@@ -48,12 +48,13 @@ int main(void) {
                 odelib::EulerMaruyamaStepper<double, double> em_stepper;
                 odelib::MilsteinStepper<double, double> milstein_stepper;
 
-                while (t < t1) {
+                long n = static_cast<long>(std::round((t1 - t0) / h));
+                for (long i = 0; i < n; i++) {
+                    double t = t0 + static_cast<double>(i) * h;
                     double dW = distribution(engine);
                     y_em = em_stepper.step(gbm_drift, gbm_diffusion, y_em, t, h, dW);
                     y_milstein = milstein_stepper.step(gbm_drift, gbm_diffusion, gbm_diffusion_derivative, y_milstein, t, h, dW);
                     W += dW;
-                    t += h;
                 }
 
                 double exact = y0 * std::exp((mu - sigma*sigma/2)*t1 + sigma*W);
@@ -85,7 +86,7 @@ int main(void) {
         }
     }
 
-    std::string outputPath = std::string(PROJECT_ROOT_DIR) + "/benchmarks/plots/StrongConvergencePlot.csv";
+    std::string outputPath = std::string(PROJECT_ROOT_DIR) + "/benchmarks/data/StrongConvergencePlot.csv";
     std::ofstream plotFile(outputPath);
     if (!plotFile.is_open()) {
         std::cerr << "Failed to open output file!\n";

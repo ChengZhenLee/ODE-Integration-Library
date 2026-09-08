@@ -54,7 +54,7 @@ int main(void) {
         errors.push_back(std::abs(exact - futures[i].get()));
     }
 
-    std::string outputPath = std::string(PROJECT_ROOT_DIR) + "/benchmarks/plots/MonteCarloN.csv";
+    std::string outputPath = std::string(PROJECT_ROOT_DIR) + "/benchmarks/data/MonteCarloN.csv";
     std::ofstream plotFile(outputPath);
     if (!plotFile.is_open()) {
         std::cerr << "Failed to open output file!\n";
