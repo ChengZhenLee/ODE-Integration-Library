@@ -1,12 +1,14 @@
-test_euler 9 0.026921
-test_rk4 9 0.0314947
-test_scaled_decay_rk4 8 0.0266144
+test_euler 12 0.001023
+test_rk4 12 0.001845
+test_scaled_decay_rk4 11 0.00154418
 test_decay_rk4_vector 1 0.472811
-test_harmonic_oscillator_rk4 7 0.029352
+test_harmonic_oscillator_rk4 10 0.0016672
 test_scaled_decay_adaptive_rk4 3 0.088313
-test_harmonic_oscillator_adaptive_rk4 7 0.0339886
-test_harmonic_oscillator_rkdp 6 0.0582407
-test_harmonic_oscillator_adaptive_rkdp 6 0.0372595
-test_gbm_euler_maruyama 5 0.564161
-test_gbm_milstein 4 1.12656
+test_harmonic_oscillator_adaptive_rk4 10 0.0016557
+test_harmonic_oscillator_rkdp 9 0.00203867
+test_harmonic_oscillator_adaptive_rkdp 9 0.00146844
+test_gbm_euler_maruyama 8 0.329242
+test_gbm_milstein 7 0.558981
+test_heston_model 0 0
 ---
+test_heston_model

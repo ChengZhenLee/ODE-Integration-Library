@@ -846,6 +846,41 @@ build tests/test_gbm_milstein.exe: CXX_EXECUTABLE_LINKER__test_gbm_milstein_ tes
   TARGET_PDB = test_gbm_milstein.exe.dbg
   TARGET_SUPPORT_DIR = tests\CMakeFiles\test_gbm_milstein.dir
 
+# =============================================================================
+# Object build statements for EXECUTABLE target test_heston_model
+
+
+#############################################
+# Order-only phony target for test_heston_model
+
+build cmake_object_order_depends_target_test_heston_model: phony || .
+
+build tests/CMakeFiles/test_heston_model.dir/test_heston_model.cpp.obj: CXX_COMPILER__test_heston_model_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/tests/test_heston_model.cpp || cmake_object_order_depends_target_test_heston_model
+  DEP_FILE = tests\CMakeFiles\test_heston_model.dir\test_heston_model.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = tests\CMakeFiles\test_heston_model.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\test_heston_model.dir
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_heston_model.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_heston_model
+
+
+#############################################
+# Link the executable tests\test_heston_model.exe
+
+build tests/test_heston_model.exe: CXX_EXECUTABLE_LINKER__test_heston_model_ tests/CMakeFiles/test_heston_model.dir/test_heston_model.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = tests\CMakeFiles\test_heston_model.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = tests\test_heston_model.exe
+  TARGET_IMPLIB = tests\libtest_heston_model.dll.a
+  TARGET_PDB = test_heston_model.exe.dbg
+  TARGET_SUPPORT_DIR = tests\CMakeFiles\test_heston_model.dir
+
 
 #############################################
 # Utility command for test
@@ -1308,6 +1343,10 @@ build test_harmonic_oscillator_rkdp: phony tests/test_harmonic_oscillator_rkdp.e
 
 build test_harmonic_oscillator_rkdp.exe: phony tests/test_harmonic_oscillator_rkdp.exe
 
+build test_heston_model: phony tests/test_heston_model.exe
+
+build test_heston_model.exe: phony tests/test_heston_model.exe
+
 build test_rk4: phony tests/test_rk4.exe
 
 build test_rk4.exe: phony tests/test_rk4.exe
@@ -1346,7 +1385,7 @@ build benchmarks/all: phony benchmarks/fixed_step_convergence.exe benchmarks/ada
 #############################################
 # Folder: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests
 
-build tests/all: phony tests/test_euler.exe tests/test_rk4.exe tests/test_scaled_decay_rk4.exe tests/test_harmonic_oscillator_rk4.exe tests/test_harmonic_oscillator_adaptive_rk4.exe tests/test_harmonic_oscillator_rkdp.exe tests/test_harmonic_oscillator_adaptive_rkdp.exe tests/test_gbm_euler_maruyama.exe tests/test_gbm_milstein.exe
+build tests/all: phony tests/test_euler.exe tests/test_rk4.exe tests/test_scaled_decay_rk4.exe tests/test_harmonic_oscillator_rk4.exe tests/test_harmonic_oscillator_adaptive_rk4.exe tests/test_harmonic_oscillator_rkdp.exe tests/test_harmonic_oscillator_adaptive_rkdp.exe tests/test_gbm_euler_maruyama.exe tests/test_gbm_milstein.exe tests/test_heston_model.exe
 
 # =============================================================================
 # Built-in targets

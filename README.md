@@ -7,6 +7,7 @@ A small, header-only C++20 library for numerically integrating ordinary differen
 - **Deterministic steppers**: Euler, RK4, Dormand-Prince (RKDP)
 - **Adaptive step-size steppers**: Adaptive RK4, Adaptive RKDP
 - **Stochastic steppers**: Euler-Maruyama, Milstein
+- **Two-factor stochastic volatility**: Heston model (correlated Euler-Maruyama)
 - Works with scalar states (`double`) or vector states (via [Eigen](https://eigen.tuxfamily.org/))
 - Header-only — just include and go
 
@@ -68,4 +69,4 @@ int main() {
 }
 ```
 
-Adaptive steppers return a struct with `states`, `times`, and step sizes (`hs`) instead of a plain vector. Stochastic steppers (Euler-Maruyama, Milstein) take a drift and diffusion function in addition to the system function. See the `examples/` directory for complete, runnable versions of each case (decay, harmonic oscillator, GBM, Black-Scholes).
+Adaptive steppers return a struct with `states`, `times`, and step sizes (`hs`) instead of a plain vector. Stochastic steppers (Euler-Maruyama, Milstein) take a drift and diffusion function in addition to the system function. The Heston stepper takes separate drift/diffusion functions for the asset price and variance processes, plus a correlation coefficient between the two Brownian motions. See the `examples/` directory for complete, runnable versions of each case (decay, harmonic oscillator, GBM, Black-Scholes, Heston).

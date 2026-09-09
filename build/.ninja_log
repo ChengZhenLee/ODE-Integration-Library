@@ -1,9 +1,9 @@
 # ninja log v7
-6	689	8106660356999671	build.ninja	ccd3d6f3f1b1daa9
-6	689	8106660356053598	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
-6	689	8106660356371131	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
-6	689	8106660356053598	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-6	689	8106660356371131	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+12	513	8106676253278341	build.ninja	ccd3d6f3f1b1daa9
+12	513	8106676252891148	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
+12	513	8106676253121794	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
+12	513	8106676252911336	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+12	513	8106676253121794	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
 15403	21495	8106638416886186	tests/CMakeFiles/test_euler.dir/test_euler.cpp.obj	3e310349e6c350b9
 2077	3478	8106640590327900	tests/test_euler.exe	857c6c01f2b394d9
 81	15441	8106638263608740	CMakeFiles/decay_euler.dir/examples/decay_euler.cpp.obj	7449eae8977cda1b
@@ -62,8 +62,8 @@
 3998	6084	8106640609666462	benchmarks/adaptive_step_trace.exe	395f0704a0d89e08
 64	13290	8106640142545245	benchmarks/CMakeFiles/fixed_step_convergence.dir/fixed_step_convergence.cpp.obj	7dfdf35c03750f2c
 3973	5943	8106640609294385	benchmarks/fixed_step_convergence.exe	37f66ae0d3a982ec
-6	689	8106660356685646	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/cmake_install.cmake	ccd3d6f3f1b1daa9
-6	689	8106660356842180	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+12	513	8106676253278341	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/cmake_install.cmake	ccd3d6f3f1b1daa9
+12	513	8106676253278341	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CTestTestfile.cmake	ccd3d6f3f1b1daa9
 86	13165	8106640142766359	benchmarks/CMakeFiles/adaptive_step_tolerance.dir/adaptive_step_tolerance.cpp.obj	d3f7ba40d77c2a5a
 4038	6007	8106640609924231	benchmarks/adaptive_step_tolerance.exe	5909e05f42ed25fa
 97	11721	8106640142864006	benchmarks/CMakeFiles/strong_convergence.dir/strong_convergence.cpp.obj	4ec77c1b228de9a
@@ -74,22 +74,30 @@
 4479	6115	8106640614927921	benchmarks/thread_speedup.exe	502bd60cf56e403e
 127	11122	8106640143160985	benchmarks/CMakeFiles/walk_comparison.dir/walk_comparison.cpp.obj	ebbe84cadd43294f
 5189	6323	8106640621692111	benchmarks/walk_comparison.exe	a70f17ccfa2f46f8
-4107	68598	8106658553550371	benchmarks/CMakeFiles/run_benchmarks	241673554de22b9c
-4107	68598	8106658553550371	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CMakeFiles/run_benchmarks	241673554de22b9c
+58	37361	8106663922579112	benchmarks/CMakeFiles/run_benchmarks	90b15ba5e7674b8
+58	37361	8106663922579112	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CMakeFiles/run_benchmarks	90b15ba5e7674b8
 43	4854	8106640569924428	CMakeFiles/heston_model.dir/examples/heston_model.cpp.obj	4cb85fdd6b1f314c
 4855	6196	8106640618115358	heston_model.exe	95b4422d7dfd15e2
 31	3331	8106658512756614	benchmarks/CMakeFiles/heston_model_walks.dir/heston_model_walks.cpp.obj	a53f1c8a41a102d9
 3335	4106	8106658545804956	benchmarks/heston_model_walks.exe	bf18479f7b8e748f
-12	513	8106660356999671	build.ninja	ccd3d6f3f1b1daa9
-12	513	8106660356999671	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
-12	513	8106660356999671	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
-12	513	8106660356999671	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/cmake_install.cmake	ccd3d6f3f1b1daa9
-12	513	8106660356999671	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-12	513	8106660356999671	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
-12	513	8106660356999671	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CTestTestfile.cmake	ccd3d6f3f1b1daa9
 159	6715	8106660359382360	benchmarks/CMakeFiles/heston_model_comparison.dir/heston_model_comparison.cpp.obj	6c344df42d945717
 6717	7661	8106660424953578	benchmarks/heston_model_comparison.exe	b1f63c30d126899b
-63	72854	8106660749244834	benchmarks/CMakeFiles/run_benchmarks	90b15ba5e7674b8
-63	72854	8106660749244834	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CMakeFiles/run_benchmarks	90b15ba5e7674b8
-58	37361	8106663922579112	benchmarks/CMakeFiles/run_benchmarks	90b15ba5e7674b8
-58	37361	8106663922579112	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CMakeFiles/run_benchmarks	90b15ba5e7674b8
+13	608	8106676253278341	build.ninja	ccd3d6f3f1b1daa9
+13	608	8106676253278341	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/cmake_install.cmake	ccd3d6f3f1b1daa9
+13	608	8106676253278341	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/cmake_install.cmake	ccd3d6f3f1b1daa9
+13	608	8106676253278341	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/cmake_install.cmake	ccd3d6f3f1b1daa9
+13	608	8106676253278341	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+13	608	8106676253278341	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/tests/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+13	608	8106676253278341	C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks/CTestTestfile.cmake	ccd3d6f3f1b1daa9
+23	2539	8106676706888164	tests/CMakeFiles/test_heston_model.dir/test_heston_model.cpp.obj	dc303f3b1c4265a3
+2541	3066	8106676732019893	tests/test_heston_model.exe	16ce639ec83afa09
+50	3190	8106683253495888	tests/CMakeFiles/test_heston_model.dir/test_heston_model.cpp.obj	dc303f3b1c4265a3
+3191	3849	8106683284956969	tests/test_heston_model.exe	16ce639ec83afa09
+20	3438	8106684746917865	tests/CMakeFiles/test_heston_model.dir/test_heston_model.cpp.obj	dc303f3b1c4265a3
+3440	4083	8106684781110135	tests/test_heston_model.exe	16ce639ec83afa09
+18	2042	8106685705267790	tests/CMakeFiles/test_heston_model.dir/test_heston_model.cpp.obj	dc303f3b1c4265a3
+2044	2460	8106685725373590	tests/test_heston_model.exe	16ce639ec83afa09
+16	1967	8106686351240325	tests/CMakeFiles/test_heston_model.dir/test_heston_model.cpp.obj	dc303f3b1c4265a3
+1969	2308	8106686370751742	tests/test_heston_model.exe	16ce639ec83afa09
+18	2780	8106688719643109	tests/CMakeFiles/test_heston_model.dir/test_heston_model.cpp.obj	dc303f3b1c4265a3
+2783	3292	8106688747304311	tests/test_heston_model.exe	16ce639ec83afa09
