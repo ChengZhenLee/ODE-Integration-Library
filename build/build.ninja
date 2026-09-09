@@ -455,6 +455,41 @@ build black_scholes_multithread.exe: CXX_EXECUTABLE_LINKER__black_scholes_multit
   TARGET_PDB = black_scholes_multithread.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\black_scholes_multithread.dir
 
+# =============================================================================
+# Object build statements for EXECUTABLE target heston_model
+
+
+#############################################
+# Order-only phony target for heston_model
+
+build cmake_object_order_depends_target_heston_model: phony || .
+
+build CMakeFiles/heston_model.dir/examples/heston_model.cpp.obj: CXX_COMPILER__heston_model_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/examples/heston_model.cpp || cmake_object_order_depends_target_heston_model
+  DEP_FILE = CMakeFiles\heston_model.dir\examples\heston_model.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = CMakeFiles\heston_model.dir
+  OBJECT_FILE_DIR = CMakeFiles\heston_model.dir\examples
+  TARGET_SUPPORT_DIR = CMakeFiles\heston_model.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target heston_model
+
+
+#############################################
+# Link the executable heston_model.exe
+
+build heston_model.exe: CXX_EXECUTABLE_LINKER__heston_model_ CMakeFiles/heston_model.dir/examples/heston_model.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\heston_model.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = heston_model.exe
+  TARGET_IMPLIB = libheston_model.dll.a
+  TARGET_PDB = heston_model.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\heston_model.dir
+
 
 #############################################
 # Utility command for test
@@ -1104,11 +1139,47 @@ build benchmarks/walk_comparison.exe: CXX_EXECUTABLE_LINKER__walk_comparison_ be
   TARGET_PDB = walk_comparison.exe.dbg
   TARGET_SUPPORT_DIR = benchmarks\CMakeFiles\walk_comparison.dir
 
+# =============================================================================
+# Object build statements for EXECUTABLE target heston_model_comparison
+
+
+#############################################
+# Order-only phony target for heston_model_comparison
+
+build cmake_object_order_depends_target_heston_model_comparison: phony || .
+
+build benchmarks/CMakeFiles/heston_model_comparison.dir/heston_model_comparison.cpp.obj: CXX_COMPILER__heston_model_comparison_unscanned_ C$:/Users/zhens/OneDrive/Desktop/ODE$ Integration$ Library/benchmarks/heston_model_comparison.cpp || cmake_object_order_depends_target_heston_model_comparison
+  DEFINES = -DPROJECT_ROOT_DIR="\"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library\""
+  DEP_FILE = benchmarks\CMakeFiles\heston_model_comparison.dir\heston_model_comparison.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I"C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/include"
+  OBJECT_DIR = benchmarks\CMakeFiles\heston_model_comparison.dir
+  OBJECT_FILE_DIR = benchmarks\CMakeFiles\heston_model_comparison.dir
+  TARGET_SUPPORT_DIR = benchmarks\CMakeFiles\heston_model_comparison.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target heston_model_comparison
+
+
+#############################################
+# Link the executable benchmarks\heston_model_comparison.exe
+
+build benchmarks/heston_model_comparison.exe: CXX_EXECUTABLE_LINKER__heston_model_comparison_ benchmarks/CMakeFiles/heston_model_comparison.dir/heston_model_comparison.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = benchmarks\CMakeFiles\heston_model_comparison.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = benchmarks\heston_model_comparison.exe
+  TARGET_IMPLIB = benchmarks\libheston_model_comparison.dll.a
+  TARGET_PDB = heston_model_comparison.exe.dbg
+  TARGET_SUPPORT_DIR = benchmarks\CMakeFiles\heston_model_comparison.dir
+
 
 #############################################
 # Utility command for run_benchmarks
 
-build benchmarks/run_benchmarks: phony benchmarks/CMakeFiles/run_benchmarks benchmarks/adaptive_step_tolerance.exe benchmarks/adaptive_step_trace.exe benchmarks/fixed_step_convergence.exe benchmarks/monte_carlo_n.exe benchmarks/strong_convergence.exe benchmarks/thread_speedup.exe benchmarks/walk_comparison.exe
+build benchmarks/run_benchmarks: phony benchmarks/CMakeFiles/run_benchmarks benchmarks/adaptive_step_tolerance.exe benchmarks/adaptive_step_trace.exe benchmarks/fixed_step_convergence.exe benchmarks/heston_model_comparison.exe benchmarks/monte_carlo_n.exe benchmarks/strong_convergence.exe benchmarks/thread_speedup.exe benchmarks/walk_comparison.exe
 
 
 #############################################
@@ -1150,8 +1221,8 @@ build benchmarks/rebuild_cache: phony benchmarks/CMakeFiles/rebuild_cache.util
 #############################################
 # Custom command for benchmarks\CMakeFiles\run_benchmarks
 
-build benchmarks/CMakeFiles/run_benchmarks | ${cmake_ninja_workdir}benchmarks/CMakeFiles/run_benchmarks: CUSTOM_COMMAND benchmarks/fixed_step_convergence.exe benchmarks/adaptive_step_trace.exe benchmarks/adaptive_step_tolerance.exe benchmarks/strong_convergence.exe benchmarks/monte_carlo_n.exe benchmarks/thread_speedup.exe benchmarks/walk_comparison.exe || benchmarks/adaptive_step_tolerance.exe benchmarks/adaptive_step_trace.exe benchmarks/fixed_step_convergence.exe benchmarks/monte_carlo_n.exe benchmarks/strong_convergence.exe benchmarks/thread_speedup.exe benchmarks/walk_comparison.exe
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\fixed_step_convergence.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\adaptive_step_trace.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\adaptive_step_tolerance.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\strong_convergence.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\monte_carlo_n.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\thread_speedup.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\walk_comparison.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\.venv\Scripts\python.exe" "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/benchmarks/plots/plot_all.py""
+build benchmarks/CMakeFiles/run_benchmarks | ${cmake_ninja_workdir}benchmarks/CMakeFiles/run_benchmarks: CUSTOM_COMMAND benchmarks/fixed_step_convergence.exe benchmarks/adaptive_step_trace.exe benchmarks/adaptive_step_tolerance.exe benchmarks/strong_convergence.exe benchmarks/monte_carlo_n.exe benchmarks/thread_speedup.exe benchmarks/walk_comparison.exe || benchmarks/adaptive_step_tolerance.exe benchmarks/adaptive_step_trace.exe benchmarks/fixed_step_convergence.exe benchmarks/heston_model_comparison.exe benchmarks/monte_carlo_n.exe benchmarks/strong_convergence.exe benchmarks/thread_speedup.exe benchmarks/walk_comparison.exe
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\fixed_step_convergence.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\adaptive_step_trace.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\adaptive_step_tolerance.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\strong_convergence.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\monte_carlo_n.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\thread_speedup.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\walk_comparison.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\build\benchmarks\heston_model_comparison.exe" && "C:\Users\zhens\OneDrive\Desktop\ODE Integration Library\.venv\Scripts\python.exe" "C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/benchmarks/plots/plot_all.py""
   DESC = Running all benchmarks and regenerating plots
 
 # =============================================================================
@@ -1188,6 +1259,12 @@ build harmonic_oscillator_adaptive_rkdp: phony harmonic_oscillator_adaptive_rkdp
 build harmonic_oscillator_rk4: phony harmonic_oscillator_rk4.exe
 
 build harmonic_oscillator_rkdp: phony harmonic_oscillator_rkdp.exe
+
+build heston_model: phony heston_model.exe
+
+build heston_model_comparison: phony benchmarks/heston_model_comparison.exe
+
+build heston_model_comparison.exe: phony benchmarks/heston_model_comparison.exe
 
 build monte_carlo_n: phony benchmarks/monte_carlo_n.exe
 
@@ -1255,14 +1332,14 @@ build walk_comparison.exe: phony benchmarks/walk_comparison.exe
 #############################################
 # Folder: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build
 
-build all: phony decay_euler.exe decay_rk4.exe scaled_decay_rk4.exe scaled_decay_adaptive_rk4.exe harmonic_oscillator_rk4.exe harmonic_oscillator_adaptive_rk4.exe harmonic_oscillator_rkdp.exe harmonic_oscillator_adaptive_rkdp.exe gbm_euler_maruyama.exe gbm_milstein.exe black_scholes.exe black_scholes_multithread.exe tests/all benchmarks/all
+build all: phony decay_euler.exe decay_rk4.exe scaled_decay_rk4.exe scaled_decay_adaptive_rk4.exe harmonic_oscillator_rk4.exe harmonic_oscillator_adaptive_rk4.exe harmonic_oscillator_rkdp.exe harmonic_oscillator_adaptive_rkdp.exe gbm_euler_maruyama.exe gbm_milstein.exe black_scholes.exe black_scholes_multithread.exe heston_model.exe tests/all benchmarks/all
 
 # =============================================================================
 
 #############################################
 # Folder: C:/Users/zhens/OneDrive/Desktop/ODE Integration Library/build/benchmarks
 
-build benchmarks/all: phony benchmarks/fixed_step_convergence.exe benchmarks/adaptive_step_trace.exe benchmarks/adaptive_step_tolerance.exe benchmarks/strong_convergence.exe benchmarks/monte_carlo_n.exe benchmarks/thread_speedup.exe benchmarks/walk_comparison.exe
+build benchmarks/all: phony benchmarks/fixed_step_convergence.exe benchmarks/adaptive_step_trace.exe benchmarks/adaptive_step_tolerance.exe benchmarks/strong_convergence.exe benchmarks/monte_carlo_n.exe benchmarks/thread_speedup.exe benchmarks/walk_comparison.exe benchmarks/heston_model_comparison.exe
 
 # =============================================================================
 

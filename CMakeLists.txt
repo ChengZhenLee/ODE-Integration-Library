@@ -24,6 +24,7 @@ add_ode_example(gbm_euler_maruyama)
 add_ode_example(gbm_milstein)
 add_ode_example(black_scholes)
 add_ode_example(black_scholes_multithread)
+add_ode_example(heston_model)
 
 enable_testing()
 add_subdirectory(tests)

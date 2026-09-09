@@ -12,6 +12,7 @@ add_benchmark(strong_convergence)
 add_benchmark(monte_carlo_n)
 add_benchmark(thread_speedup)
 add_benchmark(walk_comparison)
+add_benchmark(heston_model_comparison)
 
 find_program(PYTHON_EXECUTABLE
     NAMES python.exe python3 python
@@ -30,6 +31,7 @@ add_custom_target(run_benchmarks
     COMMAND monte_carlo_n
     COMMAND thread_speedup
     COMMAND walk_comparison
+    COMMAND heston_model_comparison
     COMMAND ${PYTHON_EXECUTABLE} "${CMAKE_CURRENT_SOURCE_DIR}/plots/plot_all.py"
     DEPENDS fixed_step_convergence adaptive_step_trace adaptive_step_tolerance
             strong_convergence monte_carlo_n thread_speedup walk_comparison

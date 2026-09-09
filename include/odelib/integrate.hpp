@@ -3,6 +3,9 @@
 #include <vector>
 
 
+#include "Eigen/Dense"
+
+
 namespace odelib {
 
 template <typename State, typename Time>
@@ -76,6 +79,19 @@ auto integrate(Stepper& stepper, Drift&& f, Diffusion&& g, DiffusionDerivative&&
     for (long i = 0; i < n; ++i) {
         Time t = t0 + static_cast<Time>(i) * h;
         res.push_back(stepper.step(f, g, gPrime, res.back(), t, h));
+    }
+
+    return res;
+}
+
+template<typename Stepper, typename DriftS, typename DiffS, typename DriftV, typename DiffV, typename Time>
+auto integrate(Stepper& stepper, DriftS&& driftS, DiffS&& diffS, DriftV&& driftV, DiffV&& diffV, Eigen::Vector2d y0, Time t0, Time t1, Time h) {
+    std::vector<Eigen::Vector2d> res{y0};
+
+    long n = static_cast<long>(std::round((t1 - t0) / h));
+    for (long i = 0; i < n; i++) {
+        Time t = t0 + static_cast<Time>(i) * h;
+        res.push_back(stepper.step(driftS, diffS, driftV, diffV, res.back(), t, h));
     }
 
     return res;

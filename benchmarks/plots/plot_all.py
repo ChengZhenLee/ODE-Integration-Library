@@ -6,10 +6,12 @@ import pandas as pd
 PLOTS_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.normpath(os.path.join(PLOTS_DIR, "..", "data"))
 
+MAX_MARKER_POINTS = 30
+
 
 def plot_lines(df, x_col, y_col, xlabel, ylabel, title, filename,
-                xscale="linear", yscale="linear"):
-    """Plot one line per `method` group from df, x_col vs y_col.
+                xscale="linear", yscale="linear", group_col="method"):
+    """Plot one line per `group_col` group from df, x_col vs y_col.
 
     Sorts each group by x_col before plotting, since CSV row order
     (e.g. sorted by tolerance) does not always match x-axis order
@@ -17,9 +19,10 @@ def plot_lines(df, x_col, y_col, xlabel, ylabel, title, filename,
     jagged, back-and-forth line instead of a clean curve.
     """
     fig, ax = plt.subplots()
-    for method_name, group in df.groupby("method"):
+    for group_name, group in df.groupby(group_col):
         group = group.sort_values(x_col)
-        ax.plot(group[x_col], group[y_col], marker='o', label=method_name)
+        marker = 'o' if len(group) <= MAX_MARKER_POINTS else None
+        ax.plot(group[x_col], group[y_col], marker=marker, label=group_name)
 
     ax.set_xscale(xscale)
     ax.set_yscale(yscale)
@@ -98,8 +101,9 @@ def plot_thread_speedup():
     baseline = df[df["thread_count"] == 1]["time_seconds"].iloc[0]
     df["speedup"] = baseline / df["time_seconds"]
 
+    marker = 'o' if len(df) <= MAX_MARKER_POINTS else None
     fig, ax = plt.subplots()
-    ax.plot(df["thread_count"], df["speedup"], marker='o', label="Measured speedup")
+    ax.plot(df["thread_count"], df["speedup"], marker=marker, label="Measured speedup")
     ax.plot(df["thread_count"], df["thread_count"], linestyle='--', label="Ideal (linear) speedup")
 
     ax.set_xlabel("Number of threads")
@@ -121,6 +125,22 @@ def plot_walk_comparison():
                "walk_comparison.png")
 
 
+def plot_heston_model_comparison():
+    df = pd.read_csv(f"{DATA_DIR}/HestonModelComparison.csv")
+
+    plot_lines(df, "t", "s",
+               "Time (t)", "Stock Price (s)",
+               "Heston Model Stock Price Paths",
+               "heston_model_price_walks.png",
+               group_col="walk")
+
+    plot_lines(df, "t", "v",
+               "Time (t)", "Volatility (v)",
+               "Heston Model Volatility Paths",
+               "heston_model_volatility_walks.png",
+               group_col="walk")
+
+
 if __name__ == "__main__":
     plot_fixed_step_convergence()
     plot_adaptive_step_trace()
@@ -129,4 +149,5 @@ if __name__ == "__main__":
     plot_monte_carlo_n()
     plot_thread_speedup()
     plot_walk_comparison()
+    plot_heston_model_comparison()
     print("All plots generated.")
