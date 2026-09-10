@@ -1,4 +1,4 @@
-# ODE Integration Library
+# ODE/SDE Integration Library
 
 A small, header-only C++20 library for numerically integrating ordinary differential equations (ODEs) and stochastic differential equations (SDEs).
 
